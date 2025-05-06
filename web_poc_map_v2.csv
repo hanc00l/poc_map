@@ -1,0 +1,200 @@
+序号,name,category,description,fingerprint,poc
+1,360-tianqing,device,"TianQing,360天擎",tianqing,"tianqing-info-leak.yaml,CNVD-2021-32799.yaml"
+2,74cms,cms,74cms sql inject,74cms,"74cms-weixin-sqli.yaml,74cms-sqli.yaml"
+3,activemq,component,activemq,activemq,"activemq-default-login.yaml,CVE-2016-3088.yaml"
+4,activemq-apollo,component,apache apollo,apollo,"CVE-2022-22897.yaml,CVE-2023-47643.yaml,apache-apollo-default-login.yaml,apollo-default-login.yaml"
+5,adobe-coldfusion,component,Adobe Coldfusion,coldfusion,"CVE-2010-2861.yaml,CVE-2018-15961.yaml,CVE-2023-29300.yaml,CVE-2023-38203.yaml"
+6,alibaba-canal,cloud,Alibaba Canal,canal,canal-default-login.yaml
+7,alibaba-nacos,cloud,Alibaba nacos,nacos,"CVE-2021-29441.yaml,CVE-2021-29442.yaml,nacos-default-login.yaml,nacos-auth-bypass.yaml,nacos-info-leak.yaml"
+8,amtt-hiboss,component,AMTT Hiboss,"amtt,hiboss",hiboss-rce.yaml
+9,an-heng,device,安恒，安恒信息安全设备,安恒,"anheng-DAS-Gateway-rce-suffix.yaml,anheng-DAS-USM-SSRF-xmlrpc.yaml"
+10,apache-airflow,component,Apache Airflow,airflow,"CVE-2020-11978.yaml,CVE-2020-13927.yaml,CVE-2020-17526.yaml,CVE-2021-38540.yaml,CVE-2022-24288.yaml,CVE-2022-40127.yaml,airflow-default-login.yaml"
+11,apache-ambari,component,Apache Ambari,ambari,ambari-default-login.yaml
+12,apache-axis2,component,Apache Axis2,axis2,"apache-axis-detect.yaml,CVE-2010-0219.yaml"
+13,apache-couchdb,component,ApacheCouchDB,couchdb,"CVE-2017-12635.yaml,couchdb-default-login.yaml,couchdb-adminparty.yaml"
+14,apache-druid,component,Apache Druid,druid,"CVE-2021-25646.yaml,CVE-2021-36749.yaml,CVE-2023-25194.yaml,druid-default-login.yaml,apache-druid-log4j.yaml"
+15,apache-dubbo,component,Apache Dubbo,dubbo,dubbo-admin-default-login.yaml
+16,apache-flink,cloud,Apache Flink,flink,"CVE-2020-17518.yaml,CVE-2020-17519.yaml,apache-flink-unauth-rce.yaml"
+17,apache-hadoop,component,Apache Hadoop,hadoop,yarn-resourcemanager-rce.yaml
+18,apache-httpd,component,Apache HTTPD,http_server,"CVE-2021-40438.yaml,CVE-2021-41773.yaml,CVE-2021-42013.yaml,CVE-2024-38473.yaml"
+19,apache-kylin,component,Apache Kylin,kylin,"CVE-2020-1956.yaml,CVE-2020-13937.yaml,kylin-default-login.yaml"
+20,apache-nifi,component,Apache NiFi,"apache-nifi,nifi",apache-nifi-rce.yaml
+21,apache-ofbiz,component,Apache OFBiz,ofbiz,"CVE-2018-8033.yaml,CVE-2020-9496.yaml,CVE-2021-29200.yaml,CVE-2021-30128.yaml,CVE-2022-47501.yaml,CVE-2023-51467.yaml,CVE-2024-32113.yaml,CVE-2024-38856.yaml,CVE-2024-45195.yaml,CVE-2024-45507.yaml,ofbiz-default-login.yaml,apache-ofbiz-detect.yaml,apache-ofbiz-log4j-rce.yaml"
+22,apache-skywalking,component,Apache SkyWalking,skywalking,CVE-2020-9483.yaml
+23,apache-solr,component,Apache Solr,solr,"CVE-2017-12629.yaml,CVE-2019-0193.yaml,CVE-2023-50290.yaml,CVE-2024-45216.yaml,apache-solr-file-read.yaml,apache-solr-log4j-rce.yaml,CVE-2019-17558.yaml"
+24,apache-struts,component,Apache Struts,struts,"CVE-2017-5638.yaml,CVE-2017-9791.yaml,CVE-2017-9805.yaml,CVE-2017-12611.yaml,CVE-2018-11776.yaml,CVE-2019-0230.yaml,CVE-2020-17530.yaml,CVE-2021-31805.yaml"
+25,apache-tomcat,component,Apache Tomcat,tomcat,"CVE-2017-12615.yaml,CVE-2018-11759.yaml,tomcat-default-login.yaml"
+26,aspcms,cms,ASPCMS,aspcms,aspcms-commentlist-sqli.yaml
+27,cacti,component,Cacti,cacti,"CVE-2020-8813.yaml,CVE-2022-46169.yaml,CVE-2023-39361.yaml,CVE-2024-29895.yaml,cacti-weathermap-file-write.yaml"
+28,chanjet,component,"chanjet,畅捷通",chanjet,"chanjet-Tplus-rce-oob-GetStoreWarehouseByStore.yaml,chanjet-Tplus-upload-Upload.yaml,chanjet-tplus-rce.yaml,chanjet-tplus-unauth-passreset.yaml,chanjet-gnremote-sqli.yaml,chanjet-tplus-checkmutex-sqli.yaml,chanjet-tplus-file-read.yaml,chanjet-tplus-fileupload.yaml,chanjet-tplus-ufida-sqli.yaml"
+29,cisco-asa,device,cve-2020-3452:Cisco Adaptive Security Appliance (ASA)/Firepower Threat Defense (FTD) - Local File Inclusion,cisco,"CVE-2020-3452.yaml,cisco-asa-detect.yaml,cisco-implant-detect.yaml"
+30,citrix,component,Citrix devices,citrix,"CVE-2019-19781.yaml,CVE-2020-8194.yaml,CVE-2020-8193.yaml,CVE-2020-8209.yaml,CVE-2023-4966.yaml,CVE-2024-6235.yaml,citrix-xenapp-log4j-rce.yaml"
+31,cnpower-oa,oa,华天动力 oa,"华天动力,cnpower-oa",cnpower-oa-sql-workFlowService.yaml
+32,confluence,oa,Confluence,confluence,"CVE-2015-8399.yaml,CVE-2019-3396.yaml,CVE-2019-3398.yaml,CVE-2021-26084.yaml,CVE-2021-26085.yaml,CVE-2022-26134.yaml,CVE-2022-26138.yaml,CVE-2023-22515.yaml"
+33,consul,cloud,Consul CVE-2022-21953 is ssrf vulnerability,consul,"CVE-2022-29153.yaml,hashicorp-consul-rce.yaml"
+34,couchcms,cms,CouchCMS,couchcms,CVE-2018-7662.yaml
+35,craft-cms,cms,Craft CMS,craft,"CVE-2020-9757.yaml,CVE-2021-41749.yaml,CVE-2023-41892.yaml,CVE-2024-56145.yaml"
+36,d-link,device,D-Link,"d-link,dlink","dlink-850L-info-leak.yaml,CVE-2019-16920.yaml,CVE-2019-17506.yaml,CVE-2020-25078.yaml,CVE-2020-9376.yaml,CVE-2020-24579.yaml,CVE-2024-57045.yaml,dlink-nas-rce.yaml,dlink-centralized-default-login.yaml"
+37,dahua,device,"dahua,大华",dahua,"dahua-loginpass-leak.yaml,CNVD-2017-06001.yaml,CNVD-2024-38747.yaml,CVE-2017-7925.yaml,CVE-2021-33044.yaml,CVE-2023-3836.yaml,dahua-bitmap-fileupload.yaml,dahua-eims-rce.yaml,dahua-wpms-lfi.yaml,dahua-wpms-rce.yaml"
+38,dedecms,cms,DedeCMS,dedecms,"dedecms-carbuyaction-fileinclude.yaml,CVE-2018-6910.yaml,CVE-2018-7700.yaml,dedecms-membergroup-sqli.yaml,dedecms-openredirect.yaml,CVE-2017-17731.yaml,CVE-2023-2059.yaml"
+39,discuz,cms,Discuz,discuz,discuz-api-pathinfo.yaml
+40,django,component,Django,django,"CVE-2018-14574.yaml,default-django-page.yaml"
+41,dotnetcms,cms,DotNetCMS,"dotnetcms,foosun",dotnetcms-sqli.yaml
+42,draytek,device,DrayTek,"draytek,vigorconnect","CVE-2020-8515.yaml,CVE-2021-20124.yaml"
+43,drupal,cms,Drupal,drupal,"CVE-2014-3704.yaml,CVE-2018-7600.yaml,CVE-2019-6340.yaml"
+44,duomicms,cms,DuomiCms,duomicms,duomicms-sql-injection.yaml
+45,ecshop,cms,ECShop,ecshop,"CVE-2021-41460.yaml,ecshop-sqli.yaml"
+46,ectouch,oa,Ectouch,ectouch,"etouch-v2-sqli.yaml,CVE-2023-39560.yaml"
+47,elasticsearch,component,Elasticsearch,elasticsearch,"CVE-2014-3120.yaml,CVE-2015-1427.yaml,CVE-2015-3337.yaml,CVE-2015-5531.yaml,elasticsearch-default-login.yaml,elasticsearch5-log4j-rce.yaml"
+48,esafenet,component,"esafenet,易赛通",esafenet,"Esafenet-CDG-upload-UploadFileFromClientServiceForClient.yaml,CVE-2019-9632.yaml,esafenet-cdg-default-login.yaml,esafenet-mysql-fileread.yaml,esafenet-netsecconfigajax-sqli.yaml,esafenet-noticeajax-sqli.yaml"
+49,etcd,component,etcd,etcd,etcd-version.yaml
+50,exchange,component,Exchange,exchange,"CVE-2021-26855.yaml,CVE-2021-34473.yaml,CVE-2021-41349.yaml"
+51,eyou,oa,Eyou,"eyou,亿邮",CNVD-2021-26422.yaml
+52,f5,device,F5,f5,"CVE-2021-22986.yaml,CVE-2022-1388.yaml,CVE-2020-5902.yaml,CVE-2023-46747.yaml"
+53,feifeicms,cms,FeiFeiCms,feifeicms,feifeicms-lfr.yaml
+54,finecms,cms,FineCMS,finecms,finecms-sqli.yaml
+55,finereport,oa,Finereport,finereport,"fine-report-v9-file-upload.yaml,finereport-path-traversal.yaml,finereport-sqli-rce.yaml,fanruanoa2012-disclosure.yaml"
+56,finereport,component,"finereport,帆软报表系统",finereport,"finereport_data_decision_system_unserialize.yaml,fine-report-v9-file-upload.yaml,finereport-path-traversal.yaml,finereport-sqli-rce.yaml"
+57,fortinet,device,Fortinet device,"fortinet,fortigate","CVE-2018-13379.yaml,CVE-2024-55591.yaml,CVE-2023-34993.yaml,CVE-2022-40684.yaml,CVE-2022-39952.yaml,fortiportal-log4j-rce.yaml"
+58,frp,component,Frp,frp,frp-default-login.yaml
+59,gateone,component,Gateone,"gateone,gate-one",CVE-2020-35736.yaml
+60,geoserver,component,"geoserver,地理信息服务器",geoserver,"geoserver-rce-cve-2024-36401.yaml,CVE-2022-24816.yaml,CVE-2023-25157.yaml,CVE-2024-36401.yaml,CVE-2024-36404.yaml,geoserver-default-login.yaml"
+61,gitlab,component,Gitlab,gitlab,"CVE-2020-26413.yaml,CVE-2021-4191.yaml,CVE-2021-22205.yaml,CVE-2021-22214.yaml,CVE-2022-0735.yaml,CVE-2022-1162.yaml,CVE-2022-2185.yaml,gitlab-weak-login.yaml"
+62,gitlist,component,Gitlist,gitlist,CVE-2018-1000533.yaml
+63,glassfish,component,Glassfish,glassfish,"CVE-2017-1000028.yaml,CVE-2017-1000029.yaml"
+64,glodon,component,"glodon,广联达",glodon,"glodon-linkworks-sql-GetIMDictionary.yaml,glodon-linkworks-sqli.yaml"
+65,gocd,component,GoCD,gocd,CVE-2021-43287.yaml
+66,h3c-imc,device,H3C-IMC,h3c-imc,"h3c-imc-rce.yaml,qizhi-fortressaircraft-unauth.yaml,h3c-iMC-JSF-rce.yaml"
+67,h5s-video-platform,component,H5S Video Platform,h5s,CNVD-2020-67113.yaml
+68,hanming-video-conferencing,component,Hanming Video Conferencing,hanming,hanming-lfr.yaml
+69,harbor,cloud,Harbor,harbor,"CVE-2019-16097.yaml,CVE-2022-46463.yaml"
+70,hikvision,device,Hikvision,hikvision,"CVE-2017-7921.yaml,CVE-2021-36260.yaml,CVE-2023-6895.yaml,hikvision-isecure-info-leak.yaml,hikvision-ivms-file-upload-bypass.yaml,hikvision-ivms-file-upload-rce.yaml,hikvision-js-files-upload.yaml,hikvision-isecure-center-rce.yaml,hikvision_isecure_center_unauth_upload_files.yaml"
+71,hjsoft,component,"hjsoft,宏景HCM人力资源管理系统",hjsoft,"HJSOFT-HCM-sql-codesettree.yaml,HJSOFT-HCM-upload-OfficeServer.yaml,hjsoft-hcm-lfi.yaml,hjsoft-hcm-sqli.yaml,hjsoft-hcm-tb-sqli.yaml"
+72,hjtcloud,cloud,HJTCloud,hjtcloud,"hjtcloud-arbitrary-file-read.yaml,hjtcloud-rest-arbitrary-file-read.yaml"
+73,huawei-router,device,Huawei Router,huawei,"CVE-2019-19411.yaml,huawei-HG532e-default-router-login.yaml,huawei-authhttp-lfi.yaml,huawei-hg255s-lfi.yaml,huawei-hg659-lfi.yaml,huawei-router-auth-bypass.yaml"
+74,ifw8,device,IFW8,"ifw8,蜂网",CVE-2019-16313.yaml
+75,iis,component,IIS,iis,"CVE-2017-7269.yaml,CVE-2015-1635.yaml"
+76,influxdb,component,InfluxDB,influxdb,CVE-2019-20933.yaml
+77,inspur,component,Inspur ClusterEngine,inspur,"CVE-2020-21224.yaml,inspur-clusterengine-rce.yaml"
+78,jboss,component,JBoss,jboss,"CVE-2017-12149.yaml,jboss-jbpm-default-login.yaml,jmx-default-login.yaml"
+79,jeewms,component,Jeewms,jeewms,jeewms-lfi.yaml
+80,jellyfin,component,Jellyfin,jellyfin,"CVE-2021-21402.yaml,CVE-2021-29490.yaml,jellyfin-default-login.yaml"
+81,jenkins,cloud,Jenkins,jenkins,"CVE-2018-1000600.yaml,CVE-2018-1000861.yaml,jenkins-default.yaml,jenkins-script.yaml,unauthenticated-jenkins.yaml"
+82,jetty,component,Jetty,jetty,"CVE-2021-28164.yaml,CVE-2021-28169.yaml,CVE-2021-34429.yaml"
+83,jinher-oa,oa,金合oa,jinher,"jinher-oa-sql-GetSqlData.yaml,jinher-oa-sql-time-GetTreeDate.yaml,jinher-oa-default-login.yaml,jinhe-jc6-sqli.yaml"
+84,jira,cloud,Jira,jira,"CVE-2019-8442.yaml,CVE-2019-8446.yaml,CVE-2019-8449.yaml,CVE-2019-8451.yaml,CVE-2019-11581.yaml,CVE-2020-14179.yaml,CVE-2020-14181.yaml,CVE-2020-29453.yaml,CVE-2020-36289.yaml,CVE-2021-26086.yaml,CVE-2023-26255.yaml,CVE-2023-26256.yaml,jira-unauthenticated-dashboards.yaml,jira-unauthenticated-adminprojects.yaml,jira-servicedesk-signup.yaml"
+85,joomla,cms,Joomla,joomla,"CVE-2015-7297.yaml,CVE-2017-8917.yaml,CVE-2018-7314.yaml,CVE-2018-6605.yaml"
+86,jumpserver,device,Jumpserver,jumpserver,"CVE-2023-42442.yaml,jumpserver-session-unauth.yaml"
+87,jupyter,component,Jupyter Notebook and hub,"jupyter,notebook,jupyterhub","jupyter-notebook-rce.yaml,jupyterhub-default-login.yaml"
+88,kafka,component,Kafka,kafka,"CVE-2023-52251.yaml,kafka-center-default-login.yaml,kafka-manager-panel.yaml"
+89,kibana,component,Kibana,kibana,"CVE-2018-17246.yaml,CVE-2019-7609.yaml"
+90,kingdee,component,Kingdee,kingdee,"kingdee-eas-directory-traversal.yaml,kingdee-erp-rce.yaml,Kingdee-Cloud-rce-kdsvc.yaml,Kingdee-Cloud-read-CommonFileServer.yaml"
+91,kingsoft,component,Kingsoft,kingsoft,"kingsoft-v8-default-login.yaml,kingsoft-v8-file-read.yaml"
+92,kong,cloud,Kong,kong,"CVE-2020-11710.yaml,CVE-2021-42192.yaml"
+93,kubernetes,cloud,Kubernetes,kubernetes,"kube-api-nodes.yaml,CVE-2018-18264.yaml"
+94,landray,oa,Landray OA,landray,CNVD-2021-28277.yaml
+95,lanproxy,device,Lanproxy,lanproxy,CVE-2021-3019.yaml
+96,laravel,cms,Laravel,laravel,"CVE-2021-3129.yaml,CVE-2022-40734.yaml"
+97,maccms,cms,Maccms,maccms,maccmsv10-backdoor.yaml
+98,message-solution,component,Message Solution,"message-solution,MessageSolution",CNVD-2021-10543.yaml
+99,metinfo,cms,MetInfo,metinfo,"CVE-2019-16996.yaml,CVE-2019-16997.yaml,CVE-2019-17418.yaml,metinfo-lfi.yaml,CNVD-2018-13393.yaml"
+100,mingyuanyun,component,"mingyuanyun,明源云ERP系统",mingyuanyun,mingyuanyun-ERP-upload-ApiUpdate.yaml
+101,minio,component,Minio,minio,"minio-default-login.yaml,CVE-2023-28432.yaml"
+102,mongo-express,component,Mongo Express,mongo-express,"CVE-2019-10758.yaml,CVE-2020-24391.yaml"
+103,mpsec,device,Mpsec,mpsec,CNVD-2021-43984.yaml
+104,myucms,cms,MyUcms,myucms,myucms-lfr.yaml
+105,nagios,component,Nagios,nagios,"CVE-2018-10735.yaml,CVE-2018-10736.yaml,CVE-2018-10737.yaml,CVE-2018-10738.yaml,CVE-2021-25296.yaml,CVE-2021-25297.yaml,CVE-2021-25298.yaml,CVE-2023-40931.yaml,CVE-2023-48084.yaml,nagios-default-login.yaml,nagiosxi-default-login.yaml"
+106,natshell,component,Natshell,natshell,"natshell-path-traversal.yaml,natshell-rce.yaml"
+107,netentsec,device,Netentsec，网康科技,netentsec,"CVE-2024-2330.yaml,nsicg-default-login.yaml,ns-asg-file-read.yaml,qi-anxin-netkang-next-generation-firewall-rce.yaml"
+108,netgear,device,Netgear,netgear,"CVE-2017-5521.yaml,CVE-2020-27866.yaml,CVE-2022-29383.yaml,netgear-dgn-rce.yaml"
+109,next.js,framework,Next.js,"next.js,nextjs,zeit","CVE-2017-16877.yaml,CVE-2018-6184.yaml,CVE-2020-5284.yaml,CVE-2024-34351.yaml,CVE-2025-29927.yaml"
+110,nexus,component,Nexus,nexus,"CVE-2019-7238.yaml,CVE-2020-10199.yaml,nexus-default-login.yaml,CVE-2020-24571.yaml,CVE-2024-4956.yaml,CVE-2024-5082.yaml"
+111,nhttpd,component,Nhttpd,"nostromo,nhttpd",CVE-2019-16278.yaml
+112,node-red,component,Node-RED,node-red,"CVE-2021-3223.yaml,nodered-default-login.yaml"
+113,novnc,component,NoVNC,novnc,CVE-2021-3654.yaml
+114,nps,component,NPS,nps,"nps-default-login.yaml,nps-auth-bypass.yaml"
+115,ns-asg,device,NS-ASG，网康科技,ns-asg,ns-asg-file-read.yaml
+116,nsfocus,device,NSFOCUS,nsfocus,"nsfocus-auth-bypass.yaml,nsfocus-lfi.yaml,Nsfocus-SAS-login-bypass-local_user.yaml,Nsfocus-SAS-rce-Exec.yaml,Nsfocus-SAS-read-GetFile.yaml"
+117,nuuo,device,NUUO NVRsolo,nuuo,"nuuo-file-inclusion.yaml,nuuo-nvrmini2-rce.yaml"
+118,odoo,cms,Odoo,odoo,CVE-2017-9416.yaml
+119,openfire,component,Openfire,openfire,"CVE-2019-18393.yaml,CVE-2019-18394.yaml,CVE-2023-32315.yaml"
+120,opentsdb,component,OpenTSDB,opentsdb,CVE-2020-35476.yaml
+121,panabit,device,Panabit,panabit,"panabit-ixcache-default-login.yaml,panabit-default-login.yaml,panabit-ixcache-rce.yaml"
+122,pandora-fms,component,Pandora FMS,"pandora-fms,pandora_fms","CVE-2019-20224.yaml,CVE-2020-8497.yaml,CVE-2020-13851.yaml"
+123,pbootcms,cms,PbootCMS,pbootcms,pbootcms-database-file-download.yaml
+124,php-cgi,component,PHP-CGI,php-cgi,CVE-2012-1823.yaml
+125,phpmyadmin,component,phpMyAdmin,phpmyadmin,"CVE-2018-12613.yaml,CVE-2019-6799.yaml,phpmyadmin-default-login.yaml,phpmyadmin-unauth.yaml"
+126,phpok,cms,Phpok,phpok,phpok-sqli.yaml
+127,phpunit,component,PHPUnit,phpunit,CVE-2017-9841.yaml
+128,powercreator-cms,cms,PowerCreator CMS,powercreator,powercreator-cms-rce.yaml
+129,pprof,component,Pprof,"pprof,prrof",CVE-2019-11248.yaml
+130,prometheus,component,Prometheus,prometheus,CVE-2021-29622.yaml
+131,pulse-secure,device,Pulse Secure,pulse,CVE-2019-11510.yaml
+132,pyspider,component,Pyspider,pyspider,pyspider-unauthorized-access.yaml
+133,qibo-cms,cms,Qibo CMS,qibosoft,qibocms-file-download.yaml
+134,qizhi-fortress-aircraft,device,Qizhi Fortress Aircraft,qizhi,qizhi-fortressaircraft-unauth.yaml
+135,qnap,device,QNAP,"qnap,photo_station","CVE-2019-7192.yaml,CVE-2022-27593.yaml,CVE-2023-47218.yaml"
+136,rabbitmq,component,RabbitMQ,rabbitmq,rabbitmq-default-login.yaml
+137,rail,component,ruby on rails,rails,"CVE-2018-3760.yaml,CVE-2019-5418.yaml,CVE-2020-8163.yaml"
+138,razor,component,Cobub Razor,razor,CVE-2018-8770.yaml
+139,rconfig,device,RConfig,rconfig,"CVE-2019-16662.yaml,CVE-2020-9425.yaml,CVE-2020-10220.yaml,CVE-2020-10546.yaml,CVE-2020-10547.yaml,CVE-2020-10548.yaml,CVE-2020-10549.yaml,CVE-2020-13638.yaml,CVE-2021-29006.yaml,rconfig-default-login.yaml,rconfig-file-upload.yaml"
+140,resin,component,Resin,resin,"resin-cnnvd-200705-315.yaml,resin-inputfile-fileread.yaml,resin-viewfile-lfr.yaml,CVE-2021-44138.yaml"
+141,rockmongo,component,RockMongo,rockmongo,rockmongo-default-login.yaml
+142,ruijie,device,Ruijie,ruijie,"CNVD-2020-56167.yaml,CNVD-2021-09650.yaml,CNVD-2021-14536.yaml,CNVD-2021-17369.yaml,ruijie-eg-rce.yaml,ruijie-eg-login-rce.yaml,ruijie-nbr-default-login.yaml,ruijie-excu-shell.yaml,ruijie-nbr-fileupload.yaml,ruijie-networks-lfi.yaml,ruijie-nmc-sync-rce.yaml,ruijie-password-leak.yaml,ruijie-rg-eg-web-mis-rce.yaml,ruijie-switch-configuration-leak.yaml"
+143,ruoyi,cms,RuoYi,ruoyi,CNVD-2021-01931.yaml
+144,saltstack,component,SaltStack,saltstack,"CVE-2020-16846.yaml,CVE-2021-25281.yaml"
+145,samsung-wlan,device,Samsung WLAN,"samsung,wea453e","samsung-wlan-default-login.yaml,samsung-wlan-ap-rce.yaml,samsung-wlan-ap-lfi.yaml"
+146,sangfor,device,Sangfor,sangfor,"sangfor-download-lfi.yaml,sangfor-ba-rce.yaml,sangfor-edr-auth-bypass.yaml,sangfor-edr-rce.yaml,sangfor-cphp-rce.yaml,CNVD-2020-46552.yaml,sangfor-sysuser-conf.yaml,sangfor-login-rce.yaml,sangfor-ngaf-lfi.yaml"
+147,satellian,device,Satellian Intellian Aptus Web,aptus,CVE-2020-7980.yaml
+148,seacms,cms,SeaCMS,seacms,"seacms-rce.yaml,seacms-sqli.yaml"
+149,secgate,component,"secgate,网神360",secgate,"qax-SecGate-3600_upload_upfile.yaml,secgate-3600-file-upload.yaml"
+150,secnet,device,SecNet,secnet,secnet-ac-default-login.yaml
+151,seeyon,oa,"Seeyon,致远OA","seeyon,致远oa","zhiyuan-oa-info-leak.yaml,yonyou-u8-oa-sqli.yaml,zhiyuan-file-upload.yaml,CNVD-2019-19299.yaml,CNVD-2020-62422.yaml,seeyon-monitor-default-login.yaml,seeyon-a8-default-login.yaml,zhiyuan-oa-session-leak.yaml,zhiyuan-oa-info-leak.yaml,seeyon-oa-setextno-sqli.yaml,seeyon-config-exposure.yaml,seeyon-createmysql-exposure.yaml,seeyon-initdata-exposure.yaml,seeyon-oa-sp2-file-upload.yaml,wooyun-2015-148227.yaml,seeyon-oa-log4j.yaml,seeyon-M1Server-rce-userTokenService.yaml"
+152,shiro,component,Apache Shiro,shiro,shiro-deserialization-detection.yaml
+153,shiziyu-cms,cms,Shiziyu CMS,"shiziyu,狮子鱼",shiziyu-cms-apicontroller-sqli.yaml
+154,shopxo,cms,ShopXO,shopxo,CNVD-2021-15822.yaml
+155,showdoc,cms,ShowDoc,showdoc,"showdoc-default-login.yaml,CNVD-2020-26585.yaml"
+156,solarwinds,component,SolarWinds,solarwinds,"CVE-2020-10148.yaml,CVE-2021-35250.yaml,CVE-2024-28987.yaml,CVE-2024-28995.yaml,solarwinds-default-login.yaml"
+157,sonarqube,component,SonarQube,sonarqube,"CVE-2020-27986.yaml,sonarqube-default-login.yaml"
+158,sonicwall,device,Sonicwall,sonicwall,sonicwall-sslvpn-shellshock.yaml
+159,spark,component,Apache Spark,spark,"unauth-spark-api.yaml,spark-webui-unauth.yaml,CVE-2022-33891.yaml"
+160,sponip,device,"Sponip,世邦IP",sponip,sponip-network-system-ping-rce.yaml
+161,spring,component,"Spring boot,spring cloud,spring framework",spring,"CVE-2022-22947.yaml,CVE-2016-4977.yaml,CVE-2019-3799.yaml,CVE-2020-5405.yaml,CVE-2020-5410.yaml,CVE-2021-21234.yaml,CVE-2021-44910.yaml,CVE-2022-22963.yaml,CVE-2022-22965.yaml,springboot-actuator.yaml,springboot-whitelabel.yaml,springboot-actuators-jolokia-xxe.yaml,springboot-h2-db-rce.yaml,springboot-log4j-rce.yaml"
+162,supervisord,component,Supervisord,supervisord,CVE-2017-11610.yaml
+163,tamronos,device,Tamron,tamron,"tamronos-rce.yaml,tamronos-user-creation.yaml"
+164,tbk-dvr,device,TBK-DVR,tbk-dvr,CVE-2018-9995.yaml
+165,telecom-gateway,device,Telecom Gateway,telecom,telecom-gateway-default-login.yaml
+166,terramaster,device,TerraMaster 存储系统,terramaster,"CVE-2020-15568.yaml,CVE-2020-28185.yaml,CVE-2020-28188.yaml,CVE-2022-24990.yaml"
+167,thinkadmin,cms,ThinkAdmin,thinkadmin,CVE-2020-25540.yaml
+168,thinkcmf,cms,ThinkCMF,thinkcmf,"thinkcmf-lfi.yaml,thinkcmf-rce.yaml,thinkcmf-arbitrary-code-execution.yaml"
+169,thinkphp,component,ThinkPHP,thinkphp,"thinkphp-2-rce.yaml,thinkphp-501-rce.yaml,thinkphp-509-information-disclosure.yaml,thinkphp-5022-rce.yaml,thinkphp-5023-rce.yaml,thinkphp6-arbitrary-write.yaml,CVE-2022-47945.yaml,CNVD-2022-86535.yaml"
+170,tongda-oa,oa,Tongda OA,tongda,"tongda-insert-sqli.yaml,tongda-meeting-unauth.yaml,tongda-api-file-upload.yaml,tongda-auth-bypass.yaml,tongda-action-uploadfile.yaml,tongda-session-disclosure.yaml,tongda-video-file-read.yaml,tongda-oa-rce-moare.yaml"
+171,topsec,device,"topsec,天融信",topsec,"topsec-topSAG-synRequest-rce.yaml,topsec-topacm-rce.yaml,topsec-topapplb-auth-bypass.yaml"
+172,tpshop,cms,TPShop,tpshop,tpshop-directory-traversal.yaml
+173,tvt,device,"TVT,同为",tvt,"CVE-2019-20085.yaml,CVE-2024-7339.yaml"
+174,ueditor,component,UEditor,ueditor,"ueditor-file-upload.yaml,ueditor-ssrf.yaml,ueditor-xss.yaml"
+175,uwsgi,component,uWSGI,uwsgi,CVE-2018-7490.yaml
+176,vbulletin,cms,vBulletin,vbulletin,"CVE-2019-16759.yaml,CVE-2020-12720.yaml,CVE-2020-17496.yaml,CVE-2023-25135.yaml"
+177,venustech,device,"venustech,启明星辰","venustech,启明星辰",venustech-vpn-download-file-read.yaml
+178,vmware,cloud,VMware,"vmware,vcenter","CVE-2022-22954.yaml,vmware-vcenter-lfi.yaml,vmware-vcenter-lfi-linux.yaml,CVE-2021-21985.yaml,CVE-2021-21972.yaml,CVE-2021-21975.yaml,vmware-detect.yaml,vmware-horizon-version.yaml,vmware-vcenter-log4j-jndi-rce.yaml"
+179,wanhu-oa,oa,万户oa,"wanhu,万户","wanhu-ezOFFICE-sql-time-productlist.yaml,wanhu-ezOFFICE-upload-wpsservlet.yaml,wanhu-documentedit-sqli.yaml,wanhu-download-ftp-file-read.yaml,wanhu-oa-fileupload-controller-arbitrary-file-upload.yaml,wanhuoa-downloadservlet-lfi.yaml,wanhuoa-officeserverservlet-file-upload.yaml,wanhuoa-smartupload-file-upload.yaml"
+180,weaver,oa,E-Office,"e-office,ecology,ebridge,weaver","CNVD-2021-49104.yaml,CNVD-2022-43245.yaml,CNVD-2023-12632.yaml,CVE-2023-2648.yaml,ecology-mysql-config.yaml,weaver-eoffice-file-upload.yaml,weaver-checkserver-sqli.yaml,weaver-e-cology-validate-sqli.yaml,weaver-e-mobile-rce.yaml,weaver-ebridge-lfi.yaml,weaver-ecology-bshservlet-rce.yaml,weaver-ecology-getsqldata-sqli.yaml,weaver-ecology-hrmcareer-sqli.yaml,weaver-group-xml-sqli.yaml,weaver-jquery-file-upload.yaml,weaver-ktreeuploadaction-file-upload.yaml,weaver-lazyuploadify-file-upload.yaml,weaver-login-sessionkey.yaml,weaver-mysql-config-info-leak.yaml,weaver-office-server-file-upload.yaml,weaver-officeserver-lfi.yaml,weaver-signaturedownload-lfi.yaml,weaver-sptmforportalthumbnail-lfi.yaml,weaver-uploadify-file-upload.yaml,weaver-uploadoperation-file-upload.yaml,weaver-userselect-unauth.yaml,ecology-oa-file-sqli.yaml,ecology-arbitrary-file-upload.yaml,ecology-filedownload-directory-traversal.yaml,ecology-mysql-config.yaml,ecology-springframework-directory-traversal.yaml,ecology-v8-sqli.yaml,ecology-syncuserinfo-sqli.yaml,weaver-E-Office-upload-upload.yaml"
+181,weblogic,component,Weblogic,weblogic,"weblogic-weak-login.yaml,CVE-2017-10271.yaml,CVE-2019-2725.yaml,CVE-2019-2729.yaml,CVE-2020-14750.yaml,CVE-2014-4210.yaml,CVE-2018-2894.yaml,CVE-2020-14750.yaml,CVE-2020-14882.yaml,CVE-2020-14883.yaml"
+182,webmin,component,Webmin,webmin,"CVE-2019-15107.yaml,CVE-2019-15642.yaml,CVE-2022-0824.yaml,CVE-2022-36446.yaml,webmin-default-login.yaml"
+183,wecrm,component,"wecrm,任我行CRM系统","wecrm,任我行",wecrm-crm-sql-SmsDataList.yaml
+184,weiphp,cms,WeiPHP,weiphp,"CNVD-2020-68596.yaml,CVE-2020-20300.yaml"
+185,wifisky,device,Wifisky,wifisky,"wifisky-default-login.yaml,wifisky7-rce.yaml"
+186,wordpress,cms,WordPress,wordpress,"CVE-2019-19985.yaml,CVE-2019-14205.yaml,wp-xmlrpc-brute-force.yaml,wp-user-enum.yaml,wp-gallery-file-upload.yaml,wordpress-rce-simplefilelist.yaml,CVE-2025-30567.yaml,CVE-2024-27954.yaml,CVE-2024-9047.yaml,CVE-2024-27956.yaml,CVE-2024-25600.yaml"
+187,wuzhicms,cms,WUZHI CMS,wuzhicms,wuzhicms-sqli.yaml
+188,xdcms,cms,XDCMS,xdcms,xdcms-sqli.yaml
+189,xiuno,cms,Xiuno,xiuno,CNVD-2019-01348.yaml
+190,xunchi,cms,Xunchi，迅优CMS,"xunchi,xunyou",CNVD-2020-23735.yaml
+191,yapi,component,YApi,yapi,yapi-rce.yaml
+192,yonyou,oa,Yonyou,yonyou,"yonyou-grp-u8-xxe.yaml,yonyou-filereceiveservlet-fileupload.yaml,CNVD-2021-30167.yaml,yonyou-u8-oa-sqli.yaml,yonyou-ksoa-dept-sqli.yaml,yonyou-nc-accept-fileupload.yaml,yonyou-nc-baseapp-deserialization.yaml,yonyou-nc-dispatcher-fileupload.yaml,yonyou-nc-info-leak.yaml,yonyou-u8-sqli.yaml,yonyou-grp-u8-sql-time-bx_historyDataCheck.yaml,yonyou-ksoa-sql-servletimagefield.yaml,yonyou-ksoa-sql-time-PayBill.yaml,yonyou-ksoa-sql-time-TaskRequestServlet.yaml,yonyou-mobile-upload-uploadApk.yaml,yonyou-nc-cloud-upload-jsinvoke.yaml,yonyou-u8-crm-fileread-getemaildata.yaml,yonyou-u8-crm-upload-getemaildata.yaml"
+193,zabbix,component,Zabbix,zabbix,"CVE-2016-10134.yaml,CVE-2019-17382.yaml,CVE-2022-23131.yaml,CVE-2022-23134.yaml,zabbix-default-login.yaml"
+194,zcms,cms,ZCMS,zcms,zcms-v3-sqli.yaml
+195,zentao,component,Zentao，禅道项目管理软件,zentao,CNVD-2022-42853.yaml
+196,zeroshell,component,ZeroShell,zeroshell,CVE-2019-12725.yaml
+197,zimbra,component,Zimbra,zimbra,"CVE-2019-9670.yaml,CVE-2022-37042.yaml,zimbra-preauth-ssrf.yaml"
+198,zzcms,cms,ZZCMS,zzcms,CVE-2022-40443.yaml
+199,zzzcms,cms,ZZZCMS,zzzcms,"CVE-2019-9041.yaml,CVE-2022-23881.yaml,zzzcms-info-disclosure.yaml"

@@ -1,0 +1,2543 @@
+- name: 360-tianqing
+  category: device
+  description: TianQing,360天擎
+  updated: "2025-05-06"
+  fingerprint:
+  - tianqing
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/tianqing-info-leak.yaml
+    - http/cnvd/2021/CNVD-2021-32799.yaml
+- name: 74cms
+  category: cms
+  description: 74cms sql inject
+  updated: "2025-05-06"
+  fingerprint:
+  - 74cms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/74cms/74cms-weixin-sqli.yaml
+    - http/vulnerabilities/other/74cms-sqli.yaml
+- name: activemq
+  category: component
+  description: activemq
+  updated: "2025-05-06"
+  fingerprint:
+  - activemq
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/activemq/activemq-default-login.yaml
+    - http/cves/2016/CVE-2016-3088.yaml
+- name: activemq-apollo
+  category: component
+  description: apache apollo
+  updated: "2025-05-06"
+  fingerprint:
+  - apollo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-22897.yaml
+    - http/cves/2023/CVE-2023-47643.yaml
+    - http/default-logins/apache/apache-apollo-default-login.yaml
+    - http/default-logins/apollo/apollo-default-login.yaml
+- name: adobe-coldfusion
+  category: component
+  description: Adobe Coldfusion
+  updated: "2025-05-06"
+  fingerprint:
+  - coldfusion
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2010/CVE-2010-2861.yaml
+    - http/cves/2018/CVE-2018-15961.yaml
+    - http/cves/2023/CVE-2023-29300.yaml
+    - http/cves/2023/CVE-2023-38203.yaml
+- name: alibaba-canal
+  category: cloud
+  description: Alibaba Canal
+  updated: "2025-05-06"
+  fingerprint:
+  - canal
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/alibaba/canal-default-login.yaml
+- name: alibaba-nacos
+  category: cloud
+  description: Alibaba nacos
+  updated: "2025-05-06"
+  fingerprint:
+  - nacos
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-29441.yaml
+    - http/cves/2021/CVE-2021-29442.yaml
+    - http/default-logins/nacos/nacos-default-login.yaml
+    - http/vulnerabilities/other/nacos-auth-bypass.yaml
+    - http/vulnerabilities/other/nacos-info-leak.yaml
+- name: amtt-hiboss
+  category: component
+  description: AMTT Hiboss
+  updated: "2025-05-06"
+  fingerprint:
+  - amtt
+  - hiboss
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/hiboss-rce.yaml
+- name: an-heng
+  category: device
+  description: 安恒，安恒信息安全设备
+  updated: "2025-05-06"
+  fingerprint:
+  - 安恒
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - anheng-DAS-Gateway-rce-suffix.yaml
+    - anheng-DAS-USM-SSRF-xmlrpc.yaml
+- name: apache-airflow
+  category: component
+  description: Apache Airflow
+  updated: "2025-05-06"
+  fingerprint:
+  - airflow
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-11978.yaml
+    - http/cves/2020/CVE-2020-13927.yaml
+    - http/cves/2020/CVE-2020-17526.yaml
+    - http/cves/2021/CVE-2021-38540.yaml
+    - http/cves/2022/CVE-2022-24288.yaml
+    - http/cves/2022/CVE-2022-40127.yaml
+    - http/default-logins/apache/airflow-default-login.yaml
+- name: apache-ambari
+  category: component
+  description: Apache Ambari
+  updated: "2025-05-06"
+  fingerprint:
+  - ambari
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/ambari/ambari-default-login.yaml
+- name: apache-axis2
+  category: component
+  description: Apache Axis2
+  updated: "2025-05-06"
+  fingerprint:
+  - axis2
+  poc:
+  - source: nuclei-template
+    path:
+    - http/technologies/apache/apache-axis-detect.yaml
+    - http/cves/2010/CVE-2010-0219.yaml
+- name: apache-couchdb
+  category: component
+  description: ApacheCouchDB
+  updated: "2025-05-06"
+  fingerprint:
+  - couchdb
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-12635.yaml
+    - http/default-logins/couchdb/couchdb-default-login.yaml
+    - http/vulnerabilities/other/couchdb-adminparty.yaml
+- name: apache-druid
+  category: component
+  description: Apache Druid
+  updated: "2025-05-06"
+  fingerprint:
+  - druid
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-25646.yaml
+    - http/cves/2021/CVE-2021-36749.yaml
+    - http/cves/2023/CVE-2023-25194.yaml
+    - http/default-logins/druid/druid-default-login.yaml
+    - http/vulnerabilities/other/apache-druid-log4j.yaml
+- name: apache-dubbo
+  category: component
+  description: Apache Dubbo
+  updated: "2025-05-06"
+  fingerprint:
+  - dubbo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/apache/dubbo-admin-default-login.yaml
+- name: apache-flink
+  category: cloud
+  description: Apache Flink
+  updated: "2025-05-06"
+  fingerprint:
+  - flink
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-17518.yaml
+    - http/cves/2020/CVE-2020-17519.yaml
+    - http/vulnerabilities/apache/apache-flink-unauth-rce.yaml
+- name: apache-hadoop
+  category: component
+  description: Apache Hadoop
+  updated: "2025-05-06"
+  fingerprint:
+  - hadoop
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/yarn-resourcemanager-rce.yaml
+- name: apache-httpd
+  category: component
+  description: Apache HTTPD
+  updated: "2025-05-06"
+  fingerprint:
+  - http_server
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-40438.yaml
+    - http/cves/2021/CVE-2021-41773.yaml
+    - http/cves/2021/CVE-2021-42013.yaml
+    - http/cves/2024/CVE-2024-38473.yaml
+- name: apache-kylin
+  category: component
+  description: Apache Kylin
+  updated: "2025-05-06"
+  fingerprint:
+  - kylin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-1956.yaml
+    - http/cves/2020/CVE-2020-13937.yaml
+    - http/default-logins/apache/kylin-default-login.yaml
+- name: apache-nifi
+  category: component
+  description: Apache NiFi
+  updated: "2025-05-06"
+  fingerprint:
+  - apache-nifi
+  - nifi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/apache/apache-nifi-rce.yaml
+- name: apache-ofbiz
+  category: component
+  description: Apache OFBiz
+  updated: "2025-05-06"
+  fingerprint:
+  - ofbiz
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-8033.yaml
+    - http/cves/2020/CVE-2020-9496.yaml
+    - http/cves/2021/CVE-2021-29200.yaml
+    - http/cves/2021/CVE-2021-30128.yaml
+    - http/cves/2022/CVE-2022-47501.yaml
+    - http/cves/2023/CVE-2023-51467.yaml
+    - http/cves/2024/CVE-2024-32113.yaml
+    - http/cves/2024/CVE-2024-38856.yaml
+    - http/cves/2024/CVE-2024-45195.yaml
+    - http/cves/2024/CVE-2024-45507.yaml
+    - http/default-logins/ofbiz/ofbiz-default-login.yaml
+    - http/technologies/apache/apache-ofbiz-detect.yaml
+    - http/vulnerabilities/apache/apache-ofbiz-log4j-rce.yaml
+- name: apache-skywalking
+  category: component
+  description: Apache SkyWalking
+  updated: "2025-05-06"
+  fingerprint:
+  - skywalking
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-9483.yaml
+- name: apache-solr
+  category: component
+  description: Apache Solr
+  updated: "2025-05-06"
+  fingerprint:
+  - solr
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-12629.yaml
+    - http/cves/2019/CVE-2019-0193.yaml
+    - http/cves/2023/CVE-2023-50290.yaml
+    - http/cves/2024/CVE-2024-45216.yaml
+    - http/vulnerabilities/apache/apache-solr-file-read.yaml
+    - http/vulnerabilities/apache/apache-solr-log4j-rce.yaml
+    - http/cves/2019/CVE-2019-17558.yaml
+- name: apache-struts
+  category: component
+  description: Apache Struts
+  updated: "2025-05-06"
+  fingerprint:
+  - struts
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-5638.yaml
+    - http/cves/2017/CVE-2017-9791.yaml
+    - http/cves/2017/CVE-2017-9805.yaml
+    - http/cves/2017/CVE-2017-12611.yaml
+    - http/cves/2018/CVE-2018-11776.yaml
+    - http/cves/2019/CVE-2019-0230.yaml
+    - http/cves/2020/CVE-2020-17530.yaml
+    - http/cves/2021/CVE-2021-31805.yaml
+- name: apache-tomcat
+  category: component
+  description: Apache Tomcat
+  updated: "2025-05-06"
+  fingerprint:
+  - tomcat
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-12615.yaml
+    - http/cves/2018/CVE-2018-11759.yaml
+    - http/default-logins/apache/tomcat-default-login.yaml
+- name: aspcms
+  category: cms
+  description: ASPCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - aspcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/aspcms-commentlist-sqli.yaml
+- name: cacti
+  category: component
+  description: Cacti
+  updated: "2025-05-06"
+  fingerprint:
+  - cacti
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-8813.yaml
+    - http/cves/2022/CVE-2022-46169.yaml
+    - http/cves/2023/CVE-2023-39361.yaml
+    - http/cves/2024/CVE-2024-29895.yaml
+    - http/vulnerabilities/other/cacti-weathermap-file-write.yaml
+- name: chanjet
+  category: component
+  description: chanjet,畅捷通
+  updated: "2025-05-06"
+  fingerprint:
+  - chanjet
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - chanjet-Tplus-rce-oob-GetStoreWarehouseByStore.yaml
+    - chanjet-Tplus-upload-Upload.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/chanjet-tplus/chanjet-tplus-rce.yaml
+    - http/vulnerabilities/chanjet-tplus/chanjet-tplus-unauth-passreset.yaml
+    - http/vulnerabilities/yonyou/chanjet-gnremote-sqli.yaml
+    - http/vulnerabilities/yonyou/chanjet-tplus-checkmutex-sqli.yaml
+    - http/vulnerabilities/yonyou/chanjet-tplus-file-read.yaml
+    - http/vulnerabilities/yonyou/chanjet-tplus-fileupload.yaml
+    - http/vulnerabilities/yonyou/chanjet-tplus-ufida-sqli.yaml
+- name: cisco-asa
+  category: device
+  description: cve-2020-3452:Cisco Adaptive Security Appliance (ASA)/Firepower Threat
+    Defense (FTD) - Local File Inclusion
+  updated: "2025-05-06"
+  fingerprint:
+  - cisco
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-3452.yaml
+    - http/technologies/cisco-asa-detect.yaml
+    - http/vulnerabilities/backdoor/cisco-implant-detect.yaml
+- name: citrix
+  category: component
+  description: Citrix devices
+  updated: "2025-05-06"
+  fingerprint:
+  - citrix
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-19781.yaml
+    - http/cves/2020/CVE-2020-8194.yaml
+    - http/cves/2020/CVE-2020-8193.yaml
+    - http/cves/2020/CVE-2020-8209.yaml
+    - http/cves/2023/CVE-2023-4966.yaml
+    - http/cves/2024/CVE-2024-6235.yaml
+    - http/vulnerabilities/other/citrix-xenapp-log4j-rce.yaml
+- name: cnpower-oa
+  category: oa
+  description: 华天动力 oa
+  updated: "2025-05-06"
+  fingerprint:
+  - 华天动力
+  - cnpower-oa
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - cnpower-oa-sql-workFlowService.yaml
+- name: confluence
+  category: oa
+  description: Confluence
+  updated: "2025-05-06"
+  fingerprint:
+  - confluence
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2015/CVE-2015-8399.yaml
+    - http/cves/2019/CVE-2019-3396.yaml
+    - http/cves/2019/CVE-2019-3398.yaml
+    - http/cves/2021/CVE-2021-26084.yaml
+    - http/cves/2021/CVE-2021-26085.yaml
+    - http/cves/2022/CVE-2022-26134.yaml
+    - http/cves/2022/CVE-2022-26138.yaml
+    - http/cves/2023/CVE-2023-22515.yaml
+- name: consul
+  category: cloud
+  description: Consul CVE-2022-21953 is ssrf vulnerability
+  updated: "2025-05-06"
+  fingerprint:
+  - consul
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-29153.yaml
+    - http/vulnerabilities/other/hashicorp-consul-rce.yaml
+- name: couchcms
+  category: cms
+  description: CouchCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - couchcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-7662.yaml
+- name: craft-cms
+  category: cms
+  description: Craft CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - craft
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-9757.yaml
+    - http/cves/2021/CVE-2021-41749.yaml
+    - http/cves/2023/CVE-2023-41892.yaml
+    - http/cves/2024/CVE-2024-56145.yaml
+- name: d-link
+  category: device
+  description: D-Link
+  updated: "2025-05-06"
+  fingerprint:
+  - d-link
+  - dlink
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/dlink-850L-info-leak.yaml
+    - http/cves/2019/CVE-2019-16920.yaml
+    - http/cves/2019/CVE-2019-17506.yaml
+    - http/cves/2020/CVE-2020-25078.yaml
+    - http/cves/2020/CVE-2020-9376.yaml
+    - http/cves/2020/CVE-2020-24579.yaml
+    - http/cves/2024/CVE-2024-57045.yaml
+    - http/vulnerabilities/dlink/dlink-nas-rce.yaml
+    - http/default-logins/d-link/dlink-centralized-default-login.yaml
+- name: dahua
+  category: device
+  description: dahua,大华
+  updated: "2025-05-06"
+  fingerprint:
+  - dahua
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - dahua-loginpass-leak.yaml
+  - source: nuclei-template
+    path:
+    - http/cnvd/2017/CNVD-2017-06001.yaml
+    - http/cnvd/2024/CNVD-2024-38747.yaml
+    - http/cves/2017/CVE-2017-7925.yaml
+    - http/cves/2021/CVE-2021-33044.yaml
+    - http/cves/2023/CVE-2023-3836.yaml
+    - http/vulnerabilities/dahua/dahua-bitmap-fileupload.yaml
+    - http/vulnerabilities/dahua/dahua-eims-rce.yaml
+    - http/vulnerabilities/dahua/dahua-wpms-lfi.yaml
+    - http/vulnerabilities/dahua/dahua-wpms-rce.yaml
+- name: dedecms
+  category: cms
+  description: DedeCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - dedecms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/dedecms/dedecms-carbuyaction-fileinclude.yaml
+    - http/cves/2018/CVE-2018-6910.yaml
+    - http/cves/2018/CVE-2018-7700.yaml
+    - http/vulnerabilities/dedecms/dedecms-membergroup-sqli.yaml
+    - http/vulnerabilities/dedecms/dedecms-openredirect.yaml
+    - http/cves/2017/CVE-2017-17731.yaml
+    - http/cves/2023/CVE-2023-2059.yaml
+- name: discuz
+  category: cms
+  description: Discuz
+  updated: "2025-05-06"
+  fingerprint:
+  - discuz
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/discuz/discuz-api-pathinfo.yaml
+- name: django
+  category: component
+  description: Django
+  updated: "2025-05-06"
+  fingerprint:
+  - django
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-14574.yaml
+    - http/technologies/default-django-page.yaml
+- name: dotnetcms
+  category: cms
+  description: DotNetCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - dotnetcms
+  - foosun
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/dotnetcms-sqli.yaml
+- name: draytek
+  category: device
+  description: DrayTek
+  updated: "2025-05-06"
+  fingerprint:
+  - draytek
+  - vigorconnect
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-8515.yaml
+    - http/cves/2021/CVE-2021-20124.yaml
+- name: drupal
+  category: cms
+  description: Drupal
+  updated: "2025-05-06"
+  fingerprint:
+  - drupal
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2014/CVE-2014-3704.yaml
+    - http/cves/2018/CVE-2018-7600.yaml
+    - http/cves/2019/CVE-2019-6340.yaml
+- name: duomicms
+  category: cms
+  description: DuomiCms
+  updated: "2025-05-06"
+  fingerprint:
+  - duomicms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/duomicms-sql-injection.yaml
+- name: ecshop
+  category: cms
+  description: ECShop
+  updated: "2025-05-06"
+  fingerprint:
+  - ecshop
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-41460.yaml
+    - http/vulnerabilities/other/ecshop-sqli.yaml
+- name: ectouch
+  category: oa
+  description: Ectouch
+  updated: "2025-05-06"
+  fingerprint:
+  - ectouch
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/etouch-v2-sqli.yaml
+    - http/cves/2023/CVE-2023-39560.yaml
+- name: elasticsearch
+  category: component
+  description: Elasticsearch
+  updated: "2025-05-06"
+  fingerprint:
+  - elasticsearch
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2014/CVE-2014-3120.yaml
+    - http/cves/2015/CVE-2015-1427.yaml
+    - http/cves/2015/CVE-2015-3337.yaml
+    - http/cves/2015/CVE-2015-5531.yaml
+    - http/default-logins/elasticsearch/elasticsearch-default-login.yaml
+    - http/vulnerabilities/other/elasticsearch5-log4j-rce.yaml
+- name: esafenet
+  category: component
+  description: esafenet,易赛通
+  updated: "2025-05-06"
+  fingerprint:
+  - esafenet
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - Esafenet-CDG-upload-UploadFileFromClientServiceForClient.yaml
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-9632.yaml
+    - http/default-logins/esafenet-cdg-default-login.yaml
+    - http/vulnerabilities/esafenet/esafenet-mysql-fileread.yaml
+    - http/vulnerabilities/esafenet/esafenet-netsecconfigajax-sqli.yaml
+    - http/vulnerabilities/esafenet/esafenet-noticeajax-sqli.yaml
+- name: etcd
+  category: component
+  description: etcd
+  updated: "2025-05-06"
+  fingerprint:
+  - etcd
+  poc:
+  - source: nuclei-template
+    path:
+    - http/technologies/kubernetes/etcd/etcd-version.yaml
+- name: exchange
+  category: component
+  description: Exchange
+  updated: "2025-05-06"
+  fingerprint:
+  - exchange
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-26855.yaml
+    - http/cves/2021/CVE-2021-34473.yaml
+    - http/cves/2021/CVE-2021-41349.yaml
+- name: eyou
+  category: oa
+  description: Eyou
+  updated: "2025-05-06"
+  fingerprint:
+  - eyou
+  - 亿邮
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-26422.yaml
+- name: f5
+  category: device
+  description: F5
+  updated: "2025-05-06"
+  fingerprint:
+  - f5
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-22986.yaml
+    - http/cves/2022/CVE-2022-1388.yaml
+    - http/cves/2020/CVE-2020-5902.yaml
+    - http/cves/2023/CVE-2023-46747.yaml
+- name: feifeicms
+  category: cms
+  description: FeiFeiCms
+  updated: "2025-05-06"
+  fingerprint:
+  - feifeicms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/feifeicms-lfr.yaml
+- name: finecms
+  category: cms
+  description: FineCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - finecms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/finecms-sqli.yaml
+- name: finereport
+  category: oa
+  description: Finereport
+  updated: "2025-05-06"
+  fingerprint:
+  - finereport
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/finereport/fine-report-v9-file-upload.yaml
+    - http/vulnerabilities/finereport/finereport-path-traversal.yaml
+    - http/vulnerabilities/finereport/finereport-sqli-rce.yaml
+    - http/vulnerabilities/other/fanruanoa2012-disclosure.yaml
+- name: finereport
+  category: component
+  description: finereport,帆软报表系统
+  updated: "2025-05-06"
+  fingerprint:
+  - finereport
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - finereport_data_decision_system_unserialize.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/finereport/fine-report-v9-file-upload.yaml
+    - http/vulnerabilities/finereport/finereport-path-traversal.yaml
+    - http/vulnerabilities/finereport/finereport-sqli-rce.yaml
+- name: fortinet
+  category: device
+  description: Fortinet device
+  updated: "2025-05-06"
+  fingerprint:
+  - fortinet
+  - fortigate
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-13379.yaml
+    - http/cves/2024/CVE-2024-55591.yaml
+    - http/cves/2023/CVE-2023-34993.yaml
+    - http/cves/2022/CVE-2022-40684.yaml
+    - http/cves/2022/CVE-2022-39952.yaml
+    - http/vulnerabilities/other/fortiportal-log4j-rce.yaml
+- name: frp
+  category: component
+  description: Frp
+  updated: "2025-05-06"
+  fingerprint:
+  - frp
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/frps/frp-default-login.yaml
+- name: gateone
+  category: component
+  description: Gateone
+  updated: "2025-05-06"
+  fingerprint:
+  - gateone
+  - gate-one
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-35736.yaml
+- name: geoserver
+  category: component
+  description: geoserver,地理信息服务器
+  updated: "2025-05-06"
+  fingerprint:
+  - geoserver
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - geoserver-rce-cve-2024-36401.yaml
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-24816.yaml
+    - http/cves/2023/CVE-2023-25157.yaml
+    - http/cves/2024/CVE-2024-36401.yaml
+    - http/cves/2024/CVE-2024-36404.yaml
+    - http/default-logins/geoserver/geoserver-default-login.yaml
+- name: gitlab
+  category: component
+  description: Gitlab
+  updated: "2025-05-06"
+  fingerprint:
+  - gitlab
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-26413.yaml
+    - http/cves/2021/CVE-2021-4191.yaml
+    - http/cves/2021/CVE-2021-22205.yaml
+    - http/cves/2021/CVE-2021-22214.yaml
+    - http/cves/2022/CVE-2022-0735.yaml
+    - http/cves/2022/CVE-2022-1162.yaml
+    - http/cves/2022/CVE-2022-2185.yaml
+    - http/default-logins/gitlab/gitlab-weak-login.yaml
+- name: gitlist
+  category: component
+  description: Gitlist
+  updated: "2025-05-06"
+  fingerprint:
+  - gitlist
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-1000533.yaml
+- name: glassfish
+  category: component
+  description: Glassfish
+  updated: "2025-05-06"
+  fingerprint:
+  - glassfish
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-1000028.yaml
+    - http/cves/2017/CVE-2017-1000029.yaml
+- name: glodon
+  category: component
+  description: glodon,广联达
+  updated: "2025-05-06"
+  fingerprint:
+  - glodon
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - glodon-linkworks-sql-GetIMDictionary.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/glodon-linkworks-sqli.yaml
+- name: gocd
+  category: component
+  description: GoCD
+  updated: "2025-05-06"
+  fingerprint:
+  - gocd
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-43287.yaml
+- name: h3c-imc
+  category: device
+  description: H3C-IMC
+  updated: "2025-05-06"
+  fingerprint:
+  - h3c-imc
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/h3c-imc-rce.yaml
+    - http/vulnerabilities/other/qizhi-fortressaircraft-unauth.yaml
+  - source: some_nuclei_templates
+    path:
+    - h3c-iMC-JSF-rce.yaml
+- name: h5s-video-platform
+  category: component
+  description: H5S Video Platform
+  updated: "2025-05-06"
+  fingerprint:
+  - h5s
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2020/CNVD-2020-67113.yaml
+- name: hanming-video-conferencing
+  category: component
+  description: Hanming Video Conferencing
+  updated: "2025-05-06"
+  fingerprint:
+  - hanming
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/hanming-lfr.yaml
+- name: harbor
+  category: cloud
+  description: Harbor
+  updated: "2025-05-06"
+  fingerprint:
+  - harbor
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16097.yaml
+    - http/cves/2022/CVE-2022-46463.yaml
+- name: hikvision
+  category: device
+  description: Hikvision
+  updated: "2025-05-06"
+  fingerprint:
+  - hikvision
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-7921.yaml
+    - http/cves/2021/CVE-2021-36260.yaml
+    - http/cves/2023/CVE-2023-6895.yaml
+    - http/vulnerabilities/hikvision/hikvision-isecure-info-leak.yaml
+    - http/vulnerabilities/hikvision/hikvision-ivms-file-upload-bypass.yaml
+    - http/vulnerabilities/hikvision/hikvision-ivms-file-upload-rce.yaml
+    - http/vulnerabilities/hikvision/hikvision-js-files-upload.yaml
+    - http/vulnerabilities/other/hikvision-isecure-center-rce.yaml
+  - source: some_nuclei_templates
+    path:
+    - hikvision_isecure_center_unauth_upload_files.yaml
+- name: hjsoft
+  category: component
+  description: hjsoft,宏景HCM人力资源管理系统
+  updated: "2025-05-06"
+  fingerprint:
+  - hjsoft
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - HJSOFT-HCM-sql-codesettree.yaml
+    - HJSOFT-HCM-upload-OfficeServer.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/hjsoft/hjsoft-hcm-lfi.yaml
+    - http/vulnerabilities/hjsoft/hjsoft-hcm-sqli.yaml
+    - http/vulnerabilities/hjsoft/hjsoft-hcm-tb-sqli.yaml
+- name: hjtcloud
+  category: cloud
+  description: HJTCloud
+  updated: "2025-05-06"
+  fingerprint:
+  - hjtcloud
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/hjtcloud-arbitrary-file-read.yaml
+    - http/vulnerabilities/other/hjtcloud-rest-arbitrary-file-read.yaml
+- name: huawei-router
+  category: device
+  description: Huawei Router
+  updated: "2025-05-06"
+  fingerprint:
+  - huawei
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-19411.yaml
+    - http/default-logins/huawei/huawei-HG532e-default-router-login.yaml
+    - http/vulnerabilities/huawei/huawei-authhttp-lfi.yaml
+    - http/vulnerabilities/huawei/huawei-hg255s-lfi.yaml
+    - http/vulnerabilities/other/huawei-hg659-lfi.yaml
+    - http/vulnerabilities/other/huawei-router-auth-bypass.yaml
+- name: ifw8
+  category: device
+  description: IFW8
+  updated: "2025-05-06"
+  fingerprint:
+  - ifw8
+  - 蜂网
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16313.yaml
+- name: iis
+  category: component
+  description: IIS
+  updated: "2025-05-06"
+  fingerprint:
+  - iis
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-7269.yaml
+    - http/cves/2015/CVE-2015-1635.yaml
+- name: influxdb
+  category: component
+  description: InfluxDB
+  updated: "2025-05-06"
+  fingerprint:
+  - influxdb
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-20933.yaml
+- name: inspur
+  category: component
+  description: Inspur ClusterEngine
+  updated: "2025-05-06"
+  fingerprint:
+  - inspur
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-21224.yaml
+    - http/vulnerabilities/other/inspur-clusterengine-rce.yaml
+- name: jboss
+  category: component
+  description: JBoss
+  updated: "2025-05-06"
+  fingerprint:
+  - jboss
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-12149.yaml
+    - http/default-logins/jboss/jboss-jbpm-default-login.yaml
+    - http/default-logins/jboss/jmx-default-login.yaml
+- name: jeewms
+  category: component
+  description: Jeewms
+  updated: "2025-05-06"
+  fingerprint:
+  - jeewms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/jeewms-lfi.yaml
+- name: jellyfin
+  category: component
+  description: Jellyfin
+  updated: "2025-05-06"
+  fingerprint:
+  - jellyfin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-21402.yaml
+    - http/cves/2021/CVE-2021-29490.yaml
+    - http/default-logins/jellyfin/jellyfin-default-login.yaml
+- name: jenkins
+  category: cloud
+  description: Jenkins
+  updated: "2025-05-06"
+  fingerprint:
+  - jenkins
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-1000600.yaml
+    - http/cves/2018/CVE-2018-1000861.yaml
+    - http/default-logins/jenkins/jenkins-default.yaml
+    - http/vulnerabilities/jenkins/jenkins-script.yaml
+    - http/vulnerabilities/jenkins/unauthenticated-jenkins.yaml
+- name: jetty
+  category: component
+  description: Jetty
+  updated: "2025-05-06"
+  fingerprint:
+  - jetty
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-28164.yaml
+    - http/cves/2021/CVE-2021-28169.yaml
+    - http/cves/2021/CVE-2021-34429.yaml
+- name: jinher-oa
+  category: oa
+  description: 金合oa
+  updated: "2025-05-06"
+  fingerprint:
+  - jinher
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - jinher-oa-sql-GetSqlData.yaml
+    - jinher-oa-sql-time-GetTreeDate.yaml
+  - source: nuclei-template
+    path:
+    - http/default-logins/jinher/jinher-oa-default-login.yaml
+    - http/vulnerabilities/jinhe/jinhe-jc6-sqli.yaml
+- name: jira
+  category: cloud
+  description: Jira
+  updated: "2025-05-06"
+  fingerprint:
+  - jira
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-8442.yaml
+    - http/cves/2019/CVE-2019-8446.yaml
+    - http/cves/2019/CVE-2019-8449.yaml
+    - http/cves/2019/CVE-2019-8451.yaml
+    - http/cves/2019/CVE-2019-11581.yaml
+    - http/cves/2020/CVE-2020-14179.yaml
+    - http/cves/2020/CVE-2020-14181.yaml
+    - http/cves/2020/CVE-2020-29453.yaml
+    - http/cves/2020/CVE-2020-36289.yaml
+    - http/cves/2021/CVE-2021-26086.yaml
+    - http/cves/2023/CVE-2023-26255.yaml
+    - http/cves/2023/CVE-2023-26256.yaml
+    - http/vulnerabilities/jira/jira-unauthenticated-dashboards.yaml
+    - http/vulnerabilities/jira/jira-unauthenticated-adminprojects.yaml
+    - http/vulnerabilities/jira/jira-servicedesk-signup.yaml
+- name: joomla
+  category: cms
+  description: Joomla
+  updated: "2025-05-06"
+  fingerprint:
+  - joomla
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2015/CVE-2015-7297.yaml
+    - http/cves/2017/CVE-2017-8917.yaml
+    - http/cves/2018/CVE-2018-7314.yaml
+    - http/cves/2018/CVE-2018-6605.yaml
+- name: jumpserver
+  category: device
+  description: Jumpserver
+  updated: "2025-05-06"
+  fingerprint:
+  - jumpserver
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2023/CVE-2023-42442.yaml
+  - source: some_nuclei_templates
+    path:
+    - jumpserver-session-unauth.yaml
+- name: jupyter
+  category: component
+  description: Jupyter Notebook and hub
+  updated: "2025-05-06"
+  fingerprint:
+  - jupyter
+  - notebook
+  - jupyterhub
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/jupyter-notebook-rce.yaml
+    - http/default-logins/jupyterhub/jupyterhub-default-login.yaml
+- name: kafka
+  category: component
+  description: Kafka
+  updated: "2025-05-06"
+  fingerprint:
+  - kafka
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2023/CVE-2023-52251.yaml
+    - http/default-logins/apache/kafka-center-default-login.yaml
+    - http/technologies/apache/kafka-manager-panel.yaml
+- name: kibana
+  category: component
+  description: Kibana
+  updated: "2025-05-06"
+  fingerprint:
+  - kibana
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-17246.yaml
+    - http/cves/2019/CVE-2019-7609.yaml
+- name: kingdee
+  category: component
+  description: Kingdee
+  updated: "2025-05-06"
+  fingerprint:
+  - kingdee
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/kingdee-eas-directory-traversal.yaml
+    - http/vulnerabilities/other/kingdee-erp-rce.yaml
+  - source: some_nuclei_templates
+    path:
+    - Kingdee-Cloud-rce-kdsvc.yaml
+    - Kingdee-Cloud-read-CommonFileServer.yaml
+- name: kingsoft
+  category: component
+  description: Kingsoft
+  updated: "2025-05-06"
+  fingerprint:
+  - kingsoft
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/others/kingsoft-v8-default-login.yaml
+    - http/vulnerabilities/other/kingsoft-v8-file-read.yaml
+- name: kong
+  category: cloud
+  description: Kong
+  updated: "2025-05-06"
+  fingerprint:
+  - kong
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-11710.yaml
+    - http/cves/2021/CVE-2021-42192.yaml
+- name: kubernetes
+  category: cloud
+  description: Kubernetes
+  updated: "2025-05-06"
+  fingerprint:
+  - kubernetes
+  poc:
+  - source: nuclei-template
+    path:
+    - http/technologies/kubernetes/kube-api/kube-api-nodes.yaml
+    - http/cves/2018/CVE-2018-18264.yaml
+- name: landray
+  category: oa
+  description: Landray OA
+  updated: "2025-05-06"
+  fingerprint:
+  - landray
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-28277.yaml
+- name: lanproxy
+  category: device
+  description: Lanproxy
+  updated: "2025-05-06"
+  fingerprint:
+  - lanproxy
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-3019.yaml
+- name: laravel
+  category: cms
+  description: Laravel
+  updated: "2025-05-06"
+  fingerprint:
+  - laravel
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-3129.yaml
+    - http/cves/2022/CVE-2022-40734.yaml
+- name: maccms
+  category: cms
+  description: Maccms
+  updated: "2025-05-06"
+  fingerprint:
+  - maccms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/backdoor/maccmsv10-backdoor.yaml
+- name: message-solution
+  category: component
+  description: Message Solution
+  updated: "2025-05-06"
+  fingerprint:
+  - message-solution
+  - MessageSolution
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-10543.yaml
+- name: metinfo
+  category: cms
+  description: MetInfo
+  updated: "2025-05-06"
+  fingerprint:
+  - metinfo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16996.yaml
+    - http/cves/2019/CVE-2019-16997.yaml
+    - http/cves/2019/CVE-2019-17418.yaml
+    - http/vulnerabilities/other/metinfo-lfi.yaml
+    - http/cnvd/2018/CNVD-2018-13393.yaml
+- name: mingyuanyun
+  category: component
+  description: mingyuanyun,明源云ERP系统
+  updated: "2025-05-06"
+  fingerprint:
+  - mingyuanyun
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - mingyuanyun-ERP-upload-ApiUpdate.yaml
+- name: minio
+  category: component
+  description: Minio
+  updated: "2025-05-06"
+  fingerprint:
+  - minio
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/minio/minio-default-login.yaml
+    - http/cves/2023/CVE-2023-28432.yaml
+- name: mongo-express
+  category: component
+  description: Mongo Express
+  updated: "2025-05-06"
+  fingerprint:
+  - mongo-express
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-10758.yaml
+    - http/cves/2020/CVE-2020-24391.yaml
+- name: mpsec
+  category: device
+  description: Mpsec
+  updated: "2025-05-06"
+  fingerprint:
+  - mpsec
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-43984.yaml
+- name: myucms
+  category: cms
+  description: MyUcms
+  updated: "2025-05-06"
+  fingerprint:
+  - myucms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/myucms-lfr.yaml
+- name: nagios
+  category: component
+  description: Nagios
+  updated: "2025-05-06"
+  fingerprint:
+  - nagios
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-10735.yaml
+    - http/cves/2018/CVE-2018-10736.yaml
+    - http/cves/2018/CVE-2018-10737.yaml
+    - http/cves/2018/CVE-2018-10738.yaml
+    - http/cves/2021/CVE-2021-25296.yaml
+    - http/cves/2021/CVE-2021-25297.yaml
+    - http/cves/2021/CVE-2021-25298.yaml
+    - http/cves/2023/CVE-2023-40931.yaml
+    - http/cves/2023/CVE-2023-48084.yaml
+    - http/default-logins/nagios/nagios-default-login.yaml
+    - http/default-logins/nagios/nagiosxi-default-login.yaml
+- name: natshell
+  category: component
+  description: Natshell
+  updated: "2025-05-06"
+  fingerprint:
+  - natshell
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/natshell-path-traversal.yaml
+    - http/vulnerabilities/other/natshell-rce.yaml
+- name: netentsec
+  category: device
+  description: Netentsec，网康科技
+  updated: "2025-05-06"
+  fingerprint:
+  - netentsec
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2024/CVE-2024-2330.yaml
+    - http/default-logins/nsicg/nsicg-default-login.yaml
+    - http/vulnerabilities/other/ns-asg-file-read.yaml
+    - http/vulnerabilities/other/qi-anxin-netkang-next-generation-firewall-rce.yaml
+- name: netgear
+  category: device
+  description: Netgear
+  updated: "2025-05-06"
+  fingerprint:
+  - netgear
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-5521.yaml
+    - http/cves/2020/CVE-2020-27866.yaml
+    - http/cves/2022/CVE-2022-29383.yaml
+    - http/vulnerabilities/netgear/netgear-dgn-rce.yaml
+- name: next.js
+  category: framework
+  description: Next.js
+  updated: "2025-05-06"
+  fingerprint:
+  - next.js
+  - nextjs
+  - zeit
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-16877.yaml
+    - http/cves/2018/CVE-2018-6184.yaml
+    - http/cves/2020/CVE-2020-5284.yaml
+    - http/cves/2024/CVE-2024-34351.yaml
+    - http/cves/2025/CVE-2025-29927.yaml
+- name: nexus
+  category: component
+  description: Nexus
+  updated: "2025-05-06"
+  fingerprint:
+  - nexus
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-7238.yaml
+    - http/cves/2020/CVE-2020-10199.yaml
+    - http/default-logins/nexus/nexus-default-login.yaml
+    - http/cves/2020/CVE-2020-24571.yaml
+    - http/cves/2024/CVE-2024-4956.yaml
+    - http/cves/2024/CVE-2024-5082.yaml
+- name: nhttpd
+  category: component
+  description: Nhttpd
+  updated: "2025-05-06"
+  fingerprint:
+  - nostromo
+  - nhttpd
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16278.yaml
+- name: node-red
+  category: component
+  description: Node-RED
+  updated: "2025-05-06"
+  fingerprint:
+  - node-red
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-3223.yaml
+    - http/default-logins/node-red/nodered-default-login.yaml
+- name: novnc
+  category: component
+  description: NoVNC
+  updated: "2025-05-06"
+  fingerprint:
+  - novnc
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-3654.yaml
+- name: nps
+  category: component
+  description: NPS
+  updated: "2025-05-06"
+  fingerprint:
+  - nps
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/nps/nps-default-login.yaml
+    - http/vulnerabilities/nps/nps-auth-bypass.yaml
+- name: ns-asg
+  category: device
+  description: NS-ASG，网康科技
+  updated: "2025-05-06"
+  fingerprint:
+  - ns-asg
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/ns-asg-file-read.yaml
+- name: nsfocus
+  category: device
+  description: NSFOCUS
+  updated: "2025-05-06"
+  fingerprint:
+  - nsfocus
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/nsfocus-auth-bypass.yaml
+    - http/vulnerabilities/other/nsfocus-lfi.yaml
+  - source: some_nuclei_templates
+    path:
+    - Nsfocus-SAS-login-bypass-local_user.yaml
+    - Nsfocus-SAS-rce-Exec.yaml
+    - Nsfocus-SAS-read-GetFile.yaml
+- name: nuuo
+  category: device
+  description: NUUO NVRsolo
+  updated: "2025-05-06"
+  fingerprint:
+  - nuuo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/nuuo-file-inclusion.yaml
+    - http/vulnerabilities/other/nuuo-nvrmini2-rce.yaml
+- name: odoo
+  category: cms
+  description: Odoo
+  updated: "2025-05-06"
+  fingerprint:
+  - odoo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-9416.yaml
+- name: openfire
+  category: component
+  description: Openfire
+  updated: "2025-05-06"
+  fingerprint:
+  - openfire
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-18393.yaml
+    - http/cves/2019/CVE-2019-18394.yaml
+    - http/cves/2023/CVE-2023-32315.yaml
+- name: opentsdb
+  category: component
+  description: OpenTSDB
+  updated: "2025-05-06"
+  fingerprint:
+  - opentsdb
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-35476.yaml
+- name: panabit
+  category: device
+  description: Panabit
+  updated: "2025-05-06"
+  fingerprint:
+  - panabit
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/others/panabit-ixcache-default-login.yaml
+    - http/default-logins/panabit/panabit-default-login.yaml
+    - http/vulnerabilities/other/panabit-ixcache-rce.yaml
+- name: pandora-fms
+  category: component
+  description: Pandora FMS
+  updated: "2025-05-06"
+  fingerprint:
+  - pandora-fms
+  - pandora_fms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-20224.yaml
+    - http/cves/2020/CVE-2020-8497.yaml
+    - http/cves/2020/CVE-2020-13851.yaml
+- name: pbootcms
+  category: cms
+  description: PbootCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - pbootcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/pbootcms-database-file-download.yaml
+- name: php-cgi
+  category: component
+  description: PHP-CGI
+  updated: "2025-05-06"
+  fingerprint:
+  - php-cgi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2012/CVE-2012-1823.yaml
+- name: phpmyadmin
+  category: component
+  description: phpMyAdmin
+  updated: "2025-05-06"
+  fingerprint:
+  - phpmyadmin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-12613.yaml
+    - http/cves/2019/CVE-2019-6799.yaml
+    - http/default-logins/phpmyadmin/phpmyadmin-default-login.yaml
+    - http/vulnerabilities/phpmyadmin-unauth.yaml
+- name: phpok
+  category: cms
+  description: Phpok
+  updated: "2025-05-06"
+  fingerprint:
+  - phpok
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/phpok-sqli.yaml
+- name: phpunit
+  category: component
+  description: PHPUnit
+  updated: "2025-05-06"
+  fingerprint:
+  - phpunit
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-9841.yaml
+- name: powercreator-cms
+  category: cms
+  description: PowerCreator CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - powercreator
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/powercreator-cms-rce.yaml
+- name: pprof
+  category: component
+  description: Pprof
+  updated: "2025-05-06"
+  fingerprint:
+  - pprof
+  - prrof
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-11248.yaml
+- name: prometheus
+  category: component
+  description: Prometheus
+  updated: "2025-05-06"
+  fingerprint:
+  - prometheus
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-29622.yaml
+- name: pulse-secure
+  category: device
+  description: Pulse Secure
+  updated: "2025-05-06"
+  fingerprint:
+  - pulse
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-11510.yaml
+- name: pyspider
+  category: component
+  description: Pyspider
+  updated: "2025-05-06"
+  fingerprint:
+  - pyspider
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/pyspider-unauthorized-access.yaml
+- name: qibo-cms
+  category: cms
+  description: Qibo CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - qibosoft
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/qibocms-file-download.yaml
+- name: qizhi-fortress-aircraft
+  category: device
+  description: Qizhi Fortress Aircraft
+  updated: "2025-05-06"
+  fingerprint:
+  - qizhi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/qizhi-fortressaircraft-unauth.yaml
+- name: qnap
+  category: device
+  description: QNAP
+  updated: "2025-05-06"
+  fingerprint:
+  - qnap
+  - photo_station
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-7192.yaml
+    - http/cves/2022/CVE-2022-27593.yaml
+    - http/cves/2023/CVE-2023-47218.yaml
+- name: rabbitmq
+  category: component
+  description: RabbitMQ
+  updated: "2025-05-06"
+  fingerprint:
+  - rabbitmq
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/rabbitmq/rabbitmq-default-login.yaml
+- name: rail
+  category: component
+  description: ruby on rails
+  updated: "2025-05-06"
+  fingerprint:
+  - rails
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-3760.yaml
+    - http/cves/2019/CVE-2019-5418.yaml
+    - http/cves/2020/CVE-2020-8163.yaml
+- name: razor
+  category: component
+  description: Cobub Razor
+  updated: "2025-05-06"
+  fingerprint:
+  - razor
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-8770.yaml
+- name: rconfig
+  category: device
+  description: RConfig
+  updated: "2025-05-06"
+  fingerprint:
+  - rconfig
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16662.yaml
+    - http/cves/2020/CVE-2020-9425.yaml
+    - http/cves/2020/CVE-2020-10220.yaml
+    - http/cves/2020/CVE-2020-10546.yaml
+    - http/cves/2020/CVE-2020-10547.yaml
+    - http/cves/2020/CVE-2020-10548.yaml
+    - http/cves/2020/CVE-2020-10549.yaml
+    - http/cves/2020/CVE-2020-13638.yaml
+    - http/cves/2021/CVE-2021-29006.yaml
+    - http/default-logins/rconfig-default-login.yaml
+    - http/vulnerabilities/other/rconfig-file-upload.yaml
+- name: resin
+  category: component
+  description: Resin
+  updated: "2025-05-06"
+  fingerprint:
+  - resin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/resin-cnnvd-200705-315.yaml
+    - http/vulnerabilities/other/resin-inputfile-fileread.yaml
+    - http/vulnerabilities/other/resin-viewfile-lfr.yaml
+    - http/cves/2021/CVE-2021-44138.yaml
+- name: rockmongo
+  category: component
+  description: RockMongo
+  updated: "2025-05-06"
+  fingerprint:
+  - rockmongo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/rockmongo/rockmongo-default-login.yaml
+- name: ruijie
+  category: device
+  description: Ruijie
+  updated: "2025-05-06"
+  fingerprint:
+  - ruijie
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2020/CNVD-2020-56167.yaml
+    - http/cnvd/2021/CNVD-2021-09650.yaml
+    - http/cnvd/2021/CNVD-2021-14536.yaml
+    - http/cnvd/2021/CNVD-2021-17369.yaml
+    - http/vulnerabilities/ruijie/ruijie-eg-rce.yaml
+    - http/vulnerabilities/ruijie/ruijie-eg-login-rce.yaml
+    - http/default-logins/ruijie/ruijie-nbr-default-login.yaml
+    - http/vulnerabilities/ruijie/ruijie-excu-shell.yaml
+    - http/vulnerabilities/ruijie/ruijie-nbr-fileupload.yaml
+    - http/vulnerabilities/ruijie/ruijie-networks-lfi.yaml
+    - http/vulnerabilities/ruijie/ruijie-nmc-sync-rce.yaml
+    - http/vulnerabilities/ruijie/ruijie-password-leak.yaml
+    - http/vulnerabilities/ruijie/ruijie-rg-eg-web-mis-rce.yaml
+  - source: some_nuclei_templates
+    path:
+    - ruijie-switch-configuration-leak.yaml
+- name: ruoyi
+  category: cms
+  description: RuoYi
+  updated: "2025-05-06"
+  fingerprint:
+  - ruoyi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-01931.yaml
+- name: saltstack
+  category: component
+  description: SaltStack
+  updated: "2025-05-06"
+  fingerprint:
+  - saltstack
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-16846.yaml
+    - http/cves/2021/CVE-2021-25281.yaml
+- name: samsung-wlan
+  category: device
+  description: Samsung WLAN
+  updated: "2025-05-06"
+  fingerprint:
+  - samsung
+  - wea453e
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/samsung/samsung-wlan-default-login.yaml
+    - http/vulnerabilities/samsung/samsung-wlan-ap-rce.yaml
+    - http/vulnerabilities/samsung/samsung-wlan-ap-lfi.yaml
+- name: sangfor
+  category: device
+  description: Sangfor
+  updated: "2025-05-06"
+  fingerprint:
+  - sangfor
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/sangfor-download-lfi.yaml
+    - http/vulnerabilities/sangfor/sangfor-ba-rce.yaml
+    - http/vulnerabilities/sangfor/sangfor-edr-auth-bypass.yaml
+    - http/vulnerabilities/sangfor/sangfor-edr-rce.yaml
+    - http/vulnerabilities/other/sangfor-cphp-rce.yaml
+    - http/cnvd/2020/CNVD-2020-46552.yaml
+    - http/vulnerabilities/other/sangfor-sysuser-conf.yaml
+    - http/vulnerabilities/sangfor/sangfor-login-rce.yaml
+    - http/vulnerabilities/sangfor/sangfor-ngaf-lfi.yaml
+- name: satellian
+  category: device
+  description: Satellian Intellian Aptus Web
+  updated: "2025-05-06"
+  fingerprint:
+  - aptus
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-7980.yaml
+- name: seacms
+  category: cms
+  description: SeaCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - seacms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/seacms-rce.yaml
+    - http/vulnerabilities/other/seacms-sqli.yaml
+- name: secgate
+  category: component
+  description: secgate,网神360
+  updated: "2025-05-06"
+  fingerprint:
+  - secgate
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - qax-SecGate-3600_upload_upfile.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/secworld/secgate-3600-file-upload.yaml
+- name: secnet
+  category: device
+  description: SecNet
+  updated: "2025-05-06"
+  fingerprint:
+  - secnet
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/others/secnet-ac-default-login.yaml
+- name: seeyon
+  category: oa
+  description: Seeyon,致远OA
+  updated: "2025-05-06"
+  fingerprint:
+  - seeyon
+  - 致远oa
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/seeyon/zhiyuan-oa-info-leak.yaml
+    - http/vulnerabilities/yonyou/yonyou-u8-oa-sqli.yaml
+    - http/vulnerabilities/seeyon/zhiyuan-file-upload.yaml
+    - http/cnvd/2019/CNVD-2019-19299.yaml
+    - http/cnvd/2020/CNVD-2020-62422.yaml
+    - http/default-logins/seeyon/seeyon-monitor-default-login.yaml
+    - http/default-logins/seeyon/seeyon-a8-default-login.yaml
+    - http/vulnerabilities/seeyon/zhiyuan-oa-session-leak.yaml
+    - http/vulnerabilities/seeyon/zhiyuan-oa-info-leak.yaml
+    - http/vulnerabilities/seeyon/seeyon-oa-setextno-sqli.yaml
+    - http/vulnerabilities/seeyon/seeyon-config-exposure.yaml
+    - http/vulnerabilities/seeyon/seeyon-createmysql-exposure.yaml
+    - http/vulnerabilities/seeyon/seeyon-initdata-exposure.yaml
+    - http/vulnerabilities/seeyon/seeyon-oa-sp2-file-upload.yaml
+    - http/vulnerabilities/seeyon/wooyun-2015-148227.yaml
+    - http/vulnerabilities/other/seeyon-oa-log4j.yaml
+  - source: some_nuclei_templates
+    path:
+    - seeyon-M1Server-rce-userTokenService.yaml
+- name: shiro
+  category: component
+  description: Apache Shiro
+  updated: "2025-05-06"
+  fingerprint:
+  - shiro
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/apache/shiro/shiro-deserialization-detection.yaml
+- name: shiziyu-cms
+  category: cms
+  description: Shiziyu CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - shiziyu
+  - 狮子鱼
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/shiziyu-cms/shiziyu-cms-apicontroller-sqli.yaml
+- name: shopxo
+  category: cms
+  description: ShopXO
+  updated: "2025-05-06"
+  fingerprint:
+  - shopxo
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-15822.yaml
+- name: showdoc
+  category: cms
+  description: ShowDoc
+  updated: "2025-05-06"
+  fingerprint:
+  - showdoc
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/showdoc/showdoc-default-login.yaml
+    - http/cnvd/2020/CNVD-2020-26585.yaml
+- name: solarwinds
+  category: component
+  description: SolarWinds
+  updated: "2025-05-06"
+  fingerprint:
+  - solarwinds
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-10148.yaml
+    - http/cves/2021/CVE-2021-35250.yaml
+    - http/cves/2024/CVE-2024-28987.yaml
+    - http/cves/2024/CVE-2024-28995.yaml
+    - http/default-logins/solarwinds/solarwinds-default-login.yaml
+- name: sonarqube
+  category: component
+  description: SonarQube
+  updated: "2025-05-06"
+  fingerprint:
+  - sonarqube
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-27986.yaml
+    - http/default-logins/sonarqube/sonarqube-default-login.yaml
+- name: sonicwall
+  category: device
+  description: Sonicwall
+  updated: "2025-05-06"
+  fingerprint:
+  - sonicwall
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/sonicwall-sslvpn-shellshock.yaml
+- name: spark
+  category: component
+  description: Apache Spark
+  updated: "2025-05-06"
+  fingerprint:
+  - spark
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/unauth-spark-api.yaml
+    - http/vulnerabilities/other/spark-webui-unauth.yaml
+    - http/cves/2022/CVE-2022-33891.yaml
+- name: sponip
+  category: device
+  description: Sponip,世邦IP
+  updated: "2025-05-06"
+  fingerprint:
+  - sponip
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/sponip-network-system-ping-rce.yaml
+- name: spring
+  category: component
+  description: Spring boot,spring cloud,spring framework
+  updated: "2025-05-06"
+  fingerprint:
+  - spring
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-22947.yaml
+    - http/cves/2016/CVE-2016-4977.yaml
+    - http/cves/2019/CVE-2019-3799.yaml
+    - http/cves/2020/CVE-2020-5405.yaml
+    - http/cves/2020/CVE-2020-5410.yaml
+    - http/cves/2021/CVE-2021-21234.yaml
+    - http/cves/2021/CVE-2021-44910.yaml
+    - http/cves/2022/CVE-2022-22963.yaml
+    - http/cves/2022/CVE-2022-22965.yaml
+    - http/technologies/springboot-actuator.yaml
+    - http/technologies/springboot-whitelabel.yaml
+    - http/vulnerabilities/springboot/springboot-actuators-jolokia-xxe.yaml
+    - http/vulnerabilities/springboot/springboot-h2-db-rce.yaml
+    - http/vulnerabilities/springboot/springboot-log4j-rce.yaml
+- name: supervisord
+  category: component
+  description: Supervisord
+  updated: "2025-05-06"
+  fingerprint:
+  - supervisord
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2017/CVE-2017-11610.yaml
+- name: tamronos
+  category: device
+  description: Tamron
+  updated: "2025-05-06"
+  fingerprint:
+  - tamron
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/tamronos-rce.yaml
+    - http/vulnerabilities/other/tamronos-user-creation.yaml
+- name: tbk-dvr
+  category: device
+  description: TBK-DVR
+  updated: "2025-05-06"
+  fingerprint:
+  - tbk-dvr
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-9995.yaml
+- name: telecom-gateway
+  category: device
+  description: Telecom Gateway
+  updated: "2025-05-06"
+  fingerprint:
+  - telecom
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/others/telecom-gateway-default-login.yaml
+- name: terramaster
+  category: device
+  description: TerraMaster 存储系统
+  updated: "2025-05-06"
+  fingerprint:
+  - terramaster
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-15568.yaml
+    - http/cves/2020/CVE-2020-28185.yaml
+    - http/cves/2020/CVE-2020-28188.yaml
+    - http/cves/2022/CVE-2022-24990.yaml
+- name: thinkadmin
+  category: cms
+  description: ThinkAdmin
+  updated: "2025-05-06"
+  fingerprint:
+  - thinkadmin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-25540.yaml
+- name: thinkcmf
+  category: cms
+  description: ThinkCMF
+  updated: "2025-05-06"
+  fingerprint:
+  - thinkcmf
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/thinkcmf/thinkcmf-lfi.yaml
+    - http/vulnerabilities/thinkcmf/thinkcmf-rce.yaml
+    - http/vulnerabilities/thinkcmf/thinkcmf-arbitrary-code-execution.yaml
+- name: thinkphp
+  category: component
+  description: ThinkPHP
+  updated: "2025-05-06"
+  fingerprint:
+  - thinkphp
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/thinkphp/thinkphp-2-rce.yaml
+    - http/vulnerabilities/thinkphp/thinkphp-501-rce.yaml
+    - http/vulnerabilities/thinkphp/thinkphp-509-information-disclosure.yaml
+    - http/vulnerabilities/thinkphp/thinkphp-5022-rce.yaml
+    - http/vulnerabilities/thinkphp/thinkphp-5023-rce.yaml
+    - http/vulnerabilities/thinkphp/thinkphp6-arbitrary-write.yaml
+    - http/cves/2022/CVE-2022-47945.yaml
+    - http/cnvd/2022/CNVD-2022-86535.yaml
+- name: tongda-oa
+  category: oa
+  description: Tongda OA
+  updated: "2025-05-06"
+  fingerprint:
+  - tongda
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/tongda/tongda-insert-sqli.yaml
+    - http/vulnerabilities/tongda/tongda-meeting-unauth.yaml
+    - http/vulnerabilities/tongda/tongda-api-file-upload.yaml
+    - http/vulnerabilities/tongda/tongda-auth-bypass.yaml
+    - http/vulnerabilities/tongda/tongda-action-uploadfile.yaml
+    - http/vulnerabilities/tongda/tongda-session-disclosure.yaml
+    - http/vulnerabilities/tongda/tongda-video-file-read.yaml
+  - source: some_nuclei_templates
+    path:
+    - tongda-oa-rce-moare.yaml
+- name: topsec
+  category: device
+  description: topsec,天融信
+  updated: "2025-05-06"
+  fingerprint:
+  - topsec
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - topsec-topSAG-synRequest-rce.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/topsec/topsec-topacm-rce.yaml
+    - http/vulnerabilities/topsec/topsec-topapplb-auth-bypass.yaml
+- name: tpshop
+  category: cms
+  description: TPShop
+  updated: "2025-05-06"
+  fingerprint:
+  - tpshop
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/tpshop-directory-traversal.yaml
+- name: tvt
+  category: device
+  description: TVT,同为
+  updated: "2025-05-06"
+  fingerprint:
+  - tvt
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-20085.yaml
+    - http/cves/2024/CVE-2024-7339.yaml
+- name: ueditor
+  category: component
+  description: UEditor
+  updated: "2025-05-06"
+  fingerprint:
+  - ueditor
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/ueditor-file-upload.yaml
+    - http/vulnerabilities/ueditor/ueditor-ssrf.yaml
+    - http/vulnerabilities/ueditor/ueditor-xss.yaml
+- name: uwsgi
+  category: component
+  description: uWSGI
+  updated: "2025-05-06"
+  fingerprint:
+  - uwsgi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2018/CVE-2018-7490.yaml
+- name: vbulletin
+  category: cms
+  description: vBulletin
+  updated: "2025-05-06"
+  fingerprint:
+  - vbulletin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-16759.yaml
+    - http/cves/2020/CVE-2020-12720.yaml
+    - http/cves/2020/CVE-2020-17496.yaml
+    - http/cves/2023/CVE-2023-25135.yaml
+- name: venustech
+  category: device
+  description: venustech,启明星辰
+  updated: "2025-05-06"
+  fingerprint:
+  - venustech
+  - 启明星辰
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - venustech-vpn-download-file-read.yaml
+- name: vmware
+  category: cloud
+  description: VMware
+  updated: "2025-05-06"
+  fingerprint:
+  - vmware
+  - vcenter
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-22954.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-lfi.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml
+    - http/cves/2021/CVE-2021-21985.yaml
+    - http/cves/2021/CVE-2021-21972.yaml
+    - http/cves/2021/CVE-2021-21975.yaml
+    - http/technologies/vmware/vmware-detect.yaml
+    - http/technologies/vmware/vmware-horizon-version.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml
+- name: wanhu-oa
+  category: oa
+  description: 万户oa
+  updated: "2025-05-06"
+  fingerprint:
+  - wanhu
+  - 万户
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - wanhu-ezOFFICE-sql-time-productlist.yaml
+    - wanhu-ezOFFICE-upload-wpsservlet.yaml
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/wanhu/wanhu-documentedit-sqli.yaml
+    - http/vulnerabilities/wanhu/wanhu-download-ftp-file-read.yaml
+    - http/vulnerabilities/wanhu/wanhu-oa-fileupload-controller-arbitrary-file-upload.yaml
+    - http/vulnerabilities/wanhu/wanhuoa-downloadservlet-lfi.yaml
+    - http/vulnerabilities/wanhu/wanhuoa-officeserverservlet-file-upload.yaml
+    - http/vulnerabilities/wanhu/wanhuoa-smartupload-file-upload.yaml
+- name: weaver
+  category: oa
+  description: E-Office
+  updated: "2025-05-06"
+  fingerprint:
+  - e-office
+  - ecology
+  - ebridge
+  - weaver
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2021/CNVD-2021-49104.yaml
+    - http/cnvd/2022/CNVD-2022-43245.yaml
+    - http/cnvd/2023/CNVD-2023-12632.yaml
+    - http/cves/2023/CVE-2023-2648.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-mysql-config.yaml
+    - http/vulnerabilities/weaver/eoffice/weaver-eoffice-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-checkserver-sqli.yaml
+    - http/vulnerabilities/weaver/weaver-e-cology-validate-sqli.yaml
+    - http/vulnerabilities/weaver/weaver-e-mobile-rce.yaml
+    - http/vulnerabilities/weaver/weaver-ebridge-lfi.yaml
+    - http/vulnerabilities/weaver/weaver-ecology-bshservlet-rce.yaml
+    - http/vulnerabilities/weaver/weaver-ecology-getsqldata-sqli.yaml
+    - http/vulnerabilities/weaver/weaver-ecology-hrmcareer-sqli.yaml
+    - http/vulnerabilities/weaver/weaver-group-xml-sqli.yaml
+    - http/vulnerabilities/weaver/weaver-jquery-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-ktreeuploadaction-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-lazyuploadify-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-login-sessionkey.yaml
+    - http/vulnerabilities/weaver/weaver-mysql-config-info-leak.yaml
+    - http/vulnerabilities/weaver/weaver-office-server-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-officeserver-lfi.yaml
+    - http/vulnerabilities/weaver/weaver-signaturedownload-lfi.yaml
+    - http/vulnerabilities/weaver/weaver-sptmforportalthumbnail-lfi.yaml
+    - http/vulnerabilities/weaver/weaver-uploadify-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-uploadoperation-file-upload.yaml
+    - http/vulnerabilities/weaver/weaver-userselect-unauth.yaml
+    - http/vulnerabilities/other/ecology-oa-file-sqli.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-arbitrary-file-upload.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-filedownload-directory-traversal.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-mysql-config.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-v8-sqli.yaml
+    - http/vulnerabilities/weaver/ecology/ecology-syncuserinfo-sqli.yaml
+  - source: some_nuclei_templates
+    path:
+    - weaver-E-Office-upload-upload.yaml
+- name: weblogic
+  category: component
+  description: Weblogic
+  updated: "2025-05-06"
+  fingerprint:
+  - weblogic
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/weblogic/weblogic-weak-login.yaml
+    - http/cves/2017/CVE-2017-10271.yaml
+    - http/cves/2019/CVE-2019-2725.yaml
+    - http/cves/2019/CVE-2019-2729.yaml
+    - http/cves/2020/CVE-2020-14750.yaml
+    - http/cves/2014/CVE-2014-4210.yaml
+    - http/cves/2018/CVE-2018-2894.yaml
+    - http/cves/2020/CVE-2020-14750.yaml
+    - http/cves/2020/CVE-2020-14882.yaml
+    - http/cves/2020/CVE-2020-14883.yaml
+- name: webmin
+  category: component
+  description: Webmin
+  updated: "2025-05-06"
+  fingerprint:
+  - webmin
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-15107.yaml
+    - http/cves/2019/CVE-2019-15642.yaml
+    - http/cves/2022/CVE-2022-0824.yaml
+    - http/cves/2022/CVE-2022-36446.yaml
+    - http/default-logins/webmin-default-login.yaml
+- name: wecrm
+  category: component
+  description: wecrm,任我行CRM系统
+  updated: "2025-05-06"
+  fingerprint:
+  - wecrm
+  - 任我行
+  poc:
+  - source: some_nuclei_templates
+    path:
+    - wecrm-crm-sql-SmsDataList.yaml
+- name: weiphp
+  category: cms
+  description: WeiPHP
+  updated: "2025-05-06"
+  fingerprint:
+  - weiphp
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2020/CNVD-2020-68596.yaml
+    - http/cves/2020/CVE-2020-20300.yaml
+- name: wifisky
+  category: device
+  description: Wifisky
+  updated: "2025-05-06"
+  fingerprint:
+  - wifisky
+  poc:
+  - source: nuclei-template
+    path:
+    - http/default-logins/wifisky/wifisky-default-login.yaml
+    - http/vulnerabilities/other/wifisky7-rce.yaml
+- name: wordpress
+  category: cms
+  description: WordPress
+  updated: "2025-05-06"
+  fingerprint:
+  - wordpress
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-19985.yaml
+    - http/cves/2019/CVE-2019-14205.yaml
+    - http/vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml
+    - http/vulnerabilities/wordpress/wp-user-enum.yaml
+    - http/vulnerabilities/wordpress/wp-gallery-file-upload.yaml
+    - http/vulnerabilities/wordpress/wordpress-rce-simplefilelist.yaml
+    - http/cves/2025/CVE-2025-30567.yaml
+    - http/cves/2024/CVE-2024-27954.yaml
+    - http/cves/2024/CVE-2024-9047.yaml
+    - http/cves/2024/CVE-2024-27956.yaml
+    - http/cves/2024/CVE-2024-25600.yaml
+- name: wuzhicms
+  category: cms
+  description: WUZHI CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - wuzhicms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/wuzhicms-sqli.yaml
+- name: xdcms
+  category: cms
+  description: XDCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - xdcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/xdcms-sqli.yaml
+- name: xiuno
+  category: cms
+  description: Xiuno
+  updated: "2025-05-06"
+  fingerprint:
+  - xiuno
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2019/CNVD-2019-01348.yaml
+- name: xunchi
+  category: cms
+  description: Xunchi，迅优CMS
+  updated: "2025-05-06"
+  fingerprint:
+  - xunchi
+  - xunyou
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2020/CNVD-2020-23735.yaml
+- name: yapi
+  category: component
+  description: YApi
+  updated: "2025-05-06"
+  fingerprint:
+  - yapi
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/yapi-rce.yaml
+- name: yonyou
+  category: oa
+  description: Yonyou
+  updated: "2025-05-06"
+  fingerprint:
+  - yonyou
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/yonyou/yonyou-grp-u8-xxe.yaml
+    - http/vulnerabilities/yonyou/yonyou-filereceiveservlet-fileupload.yaml
+    - http/cnvd/2021/CNVD-2021-30167.yaml
+    - http/vulnerabilities/yonyou/yonyou-u8-oa-sqli.yaml
+    - http/vulnerabilities/yonyou/yonyou-ksoa-dept-sqli.yaml
+    - http/vulnerabilities/yonyou/yonyou-nc-accept-fileupload.yaml
+    - http/vulnerabilities/yonyou/yonyou-nc-baseapp-deserialization.yaml
+    - http/vulnerabilities/yonyou/yonyou-nc-dispatcher-fileupload.yaml
+    - http/vulnerabilities/yonyou/yonyou-nc-info-leak.yaml
+    - http/vulnerabilities/yonyou/yonyou-u8-sqli.yaml
+  - source: some_nuclei_templates
+    path:
+    - yonyou-grp-u8-sql-time-bx_historyDataCheck.yaml
+    - yonyou-ksoa-sql-servletimagefield.yaml
+    - yonyou-ksoa-sql-time-PayBill.yaml
+    - yonyou-ksoa-sql-time-TaskRequestServlet.yaml
+    - yonyou-mobile-upload-uploadApk.yaml
+    - yonyou-nc-cloud-upload-jsinvoke.yaml
+    - yonyou-u8-crm-fileread-getemaildata.yaml
+    - yonyou-u8-crm-upload-getemaildata.yaml
+- name: zabbix
+  category: component
+  description: Zabbix
+  updated: "2025-05-06"
+  fingerprint:
+  - zabbix
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2016/CVE-2016-10134.yaml
+    - http/cves/2019/CVE-2019-17382.yaml
+    - http/cves/2022/CVE-2022-23131.yaml
+    - http/cves/2022/CVE-2022-23134.yaml
+    - http/default-logins/zabbix/zabbix-default-login.yaml
+- name: zcms
+  category: cms
+  description: ZCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - zcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/vulnerabilities/other/zcms-v3-sqli.yaml
+- name: zentao
+  category: component
+  description: Zentao，禅道项目管理软件
+  updated: "2025-05-06"
+  fingerprint:
+  - zentao
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cnvd/2022/CNVD-2022-42853.yaml
+- name: zeroshell
+  category: component
+  description: ZeroShell
+  updated: "2025-05-06"
+  fingerprint:
+  - zeroshell
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-12725.yaml
+- name: zimbra
+  category: component
+  description: Zimbra
+  updated: "2025-05-06"
+  fingerprint:
+  - zimbra
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-9670.yaml
+    - http/cves/2022/CVE-2022-37042.yaml
+    - http/vulnerabilities/other/zimbra-preauth-ssrf.yaml
+- name: zzcms
+  category: cms
+  description: ZZCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - zzcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2022/CVE-2022-40443.yaml
+- name: zzzcms
+  category: cms
+  description: ZZZCMS
+  updated: "2025-05-06"
+  fingerprint:
+  - zzzcms
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2019/CVE-2019-9041.yaml
+    - http/cves/2022/CVE-2022-23881.yaml
+    - http/vulnerabilities/zzzcms/zzzcms-info-disclosure.yaml
