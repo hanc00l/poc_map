@@ -52,7 +52,7 @@ poc_map是一款用于nemoV3里，根据web指纹自动匹配poc的工具。在N
 - 2：[some_nuclei_templates](https://github.com/hanc00l/some_nuclei_templates)，hanc00l维护的模板库（目前还比较少，后续陆续补充）；
 - 3：private_nuclei_templates，私有poc库，不公开。
 
-### 4、plugins下的yaml文件示例
+### 4、yaml文件示例
 
 ```yaml
 - name: finereport
@@ -73,3 +73,5 @@ poc_map是一款用于nemoV3里，根据web指纹自动匹配poc的工具。在N
 ```
 
 ## 其他
+
+感谢上述的poc库作者，他们的贡献是本项目的源动力。

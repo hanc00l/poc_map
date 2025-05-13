@@ -34,7 +34,7 @@
 - name: activemq-apollo
   category: component
   description: apache apollo
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - apollo
   poc:
@@ -44,6 +44,7 @@
     - http/cves/2023/CVE-2023-47643.yaml
     - http/default-logins/apache/apache-apollo-default-login.yaml
     - http/default-logins/apollo/apollo-default-login.yaml
+    - http/misconfiguration/apollo-adminservice-unauth.yaml
 - name: adobe-coldfusion
   category: component
   description: Adobe Coldfusion
@@ -70,7 +71,7 @@
 - name: alibaba-nacos
   category: cloud
   description: Alibaba nacos
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - nacos
   poc:
@@ -81,6 +82,8 @@
     - http/default-logins/nacos/nacos-default-login.yaml
     - http/vulnerabilities/other/nacos-auth-bypass.yaml
     - http/vulnerabilities/other/nacos-info-leak.yaml
+    - http/misconfiguration/nacos/nacos-create-user.yaml
+    - http/misconfiguration/nacos-authentication-bypass.yaml
 - name: amtt-hiboss
   category: component
   description: AMTT Hiboss
@@ -94,19 +97,23 @@
     - http/vulnerabilities/other/hiboss-rce.yaml
 - name: an-heng
   category: device
-  description: 安恒，安恒信息安全设备
-  updated: "2025-05-06"
+  description: 安恒，安恒信息安全设备，明御运维审计与风险控制系统
+  updated: "2025-05-12"
   fingerprint:
   - 安恒
+  - 明御
   poc:
   - source: some_nuclei_templates
     path:
     - anheng-DAS-Gateway-rce-suffix.yaml
     - anheng-DAS-USM-SSRF-xmlrpc.yaml
+  - source: nuclei-template
+    path:
+    - http/misconfiguration/mingyu-xmlrpc-sock-adduser.yaml
 - name: apache-airflow
   category: component
   description: Apache Airflow
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - airflow
   poc:
@@ -119,6 +126,8 @@
     - http/cves/2022/CVE-2022-24288.yaml
     - http/cves/2022/CVE-2022-40127.yaml
     - http/default-logins/apache/airflow-default-login.yaml
+    - http/misconfiguration/airflow/airflow-debug.yaml
+    - http/misconfiguration/airflow/unauthenticated-airflow.yaml
 - name: apache-ambari
   category: component
   description: Apache Ambari
@@ -143,7 +152,7 @@
 - name: apache-couchdb
   category: component
   description: ApacheCouchDB
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - couchdb
   poc:
@@ -152,6 +161,7 @@
     - http/cves/2017/CVE-2017-12635.yaml
     - http/default-logins/couchdb/couchdb-default-login.yaml
     - http/vulnerabilities/other/couchdb-adminparty.yaml
+    - http/misconfiguration/apache/apache-couchdb-unauth.yaml
 - name: apache-druid
   category: component
   description: Apache Druid
@@ -226,7 +236,7 @@
 - name: apache-nifi
   category: component
   description: Apache NiFi
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - apache-nifi
   - nifi
@@ -234,6 +244,7 @@
   - source: nuclei-template
     path:
     - http/vulnerabilities/apache/apache-nifi-rce.yaml
+    - http/misconfiguration/apache/apache-nifi-unauth.yaml
 - name: apache-ofbiz
   category: component
   description: Apache OFBiz
@@ -282,10 +293,11 @@
     - http/vulnerabilities/apache/apache-solr-file-read.yaml
     - http/vulnerabilities/apache/apache-solr-log4j-rce.yaml
     - http/cves/2019/CVE-2019-17558.yaml
+    - http/misconfiguration/solr-query-dashboard.yaml
 - name: apache-struts
   category: component
   description: Apache Struts
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - struts
   poc:
@@ -299,6 +311,7 @@
     - http/cves/2019/CVE-2019-0230.yaml
     - http/cves/2020/CVE-2020-17530.yaml
     - http/cves/2021/CVE-2021-31805.yaml
+    - http/misconfiguration/struts-ognl-console.yaml
 - name: apache-tomcat
   category: component
   description: Apache Tomcat
@@ -398,7 +411,7 @@
 - name: confluence
   category: oa
   description: Confluence
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - confluence
   poc:
@@ -412,6 +425,7 @@
     - http/cves/2022/CVE-2022-26134.yaml
     - http/cves/2022/CVE-2022-26138.yaml
     - http/cves/2023/CVE-2023-22515.yaml
+    - http/misconfiguration/confluence/confluence-oauth-admin.yaml
 - name: consul
   category: cloud
   description: Consul CVE-2022-21953 is ssrf vulnerability
@@ -593,7 +607,7 @@
 - name: elasticsearch
   category: component
   description: Elasticsearch
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - elasticsearch
   poc:
@@ -605,6 +619,7 @@
     - http/cves/2015/CVE-2015-5531.yaml
     - http/default-logins/elasticsearch/elasticsearch-default-login.yaml
     - http/vulnerabilities/other/elasticsearch5-log4j-rce.yaml
+    - http/misconfiguration/elasticsearch.yaml
 - name: esafenet
   category: component
   description: esafenet,易赛通
@@ -632,6 +647,16 @@
   - source: nuclei-template
     path:
     - http/technologies/kubernetes/etcd/etcd-version.yaml
+- name: everything
+  category: component
+  description: Everything
+  updated: "2025-05-12"
+  fingerprint:
+  - everything
+  poc:
+  - source: nuclei-template
+    path:
+    - http/misconfiguration/everything-listing.yaml
 - name: exchange
   category: component
   description: Exchange
@@ -770,10 +795,21 @@
     - http/cves/2024/CVE-2024-36401.yaml
     - http/cves/2024/CVE-2024-36404.yaml
     - http/default-logins/geoserver/geoserver-default-login.yaml
+- name: gitea
+  category: component
+  description: Gitea
+  updated: "2025-05-12"
+  fingerprint:
+  - gitea
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2020/CVE-2020-14144.yaml
+    - http/vulnerabilities/gitea/gitea-rce.yaml
 - name: gitlab
   category: component
   description: Gitlab
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - gitlab
   poc:
@@ -787,6 +823,10 @@
     - http/cves/2022/CVE-2022-1162.yaml
     - http/cves/2022/CVE-2022-2185.yaml
     - http/default-logins/gitlab/gitlab-weak-login.yaml
+    - http/misconfiguration/gitlab/gitlab-public-repos.yaml
+    - http/misconfiguration/gitlab/gitlab-uninitialized-password.yaml
+    - http/misconfiguration/gitlab/gitlab-api-user-enum.yaml
+    - http/misconfiguration/gitlab/gitlab-user-enum.yaml
 - name: gitlist
   category: component
   description: Gitlist
@@ -879,7 +919,7 @@
 - name: hikvision
   category: device
   description: Hikvision
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - hikvision
   poc:
@@ -893,6 +933,7 @@
     - http/vulnerabilities/hikvision/hikvision-ivms-file-upload-rce.yaml
     - http/vulnerabilities/hikvision/hikvision-js-files-upload.yaml
     - http/vulnerabilities/other/hikvision-isecure-center-rce.yaml
+    - http/misconfiguration/hikvision-env.yaml
   - source: some_nuclei_templates
     path:
     - hikvision_isecure_center_unauth_upload_files.yaml
@@ -984,7 +1025,7 @@
 - name: jboss
   category: component
   description: JBoss
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - jboss
   poc:
@@ -993,6 +1034,26 @@
     - http/cves/2017/CVE-2017-12149.yaml
     - http/default-logins/jboss/jboss-jbpm-default-login.yaml
     - http/default-logins/jboss/jmx-default-login.yaml
+    - http/misconfiguration/jboss-web-service.yaml
+- name: jeecg-boot
+  category: component
+  description: Jeecg Boot
+  updated: "2025-05-12"
+  fingerprint:
+  - jeecg
+  poc:
+  - source: nuclei-template
+    path:
+    - http/cves/2021/CVE-2021-37304.yaml
+    - http/cves/2021/CVE-2021-37305.yaml
+    - http/cves/2023/CVE-2023-1454.yaml
+    - http/cves/2023/CVE-2023-4450.yaml
+    - http/cves/2023/CVE-2023-33510.yaml
+    - http/cves/2023/CVE-2023-34659.yaml
+    - http/cves/2023/CVE-2023-38992.yaml
+    - http/cves/2024/CVE-2024-48307.yaml
+    - http/exposures/apis/jeecg-boot-swagger.yaml
+    - http/vulnerabilities/other/jeeplus-cms-resetpassword-sqli.yaml
 - name: jeewms
   category: component
   description: Jeewms
@@ -1018,7 +1079,7 @@
 - name: jenkins
   category: cloud
   description: Jenkins
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - jenkins
   poc:
@@ -1029,6 +1090,7 @@
     - http/default-logins/jenkins/jenkins-default.yaml
     - http/vulnerabilities/jenkins/jenkins-script.yaml
     - http/vulnerabilities/jenkins/unauthenticated-jenkins.yaml
+    - http/misconfiguration/jenkins/jenkins-openuser-register.yaml
 - name: jetty
   category: component
   description: Jetty
@@ -1109,7 +1171,7 @@
 - name: jupyter
   category: component
   description: Jupyter Notebook and hub
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - jupyter
   - notebook
@@ -1119,10 +1181,13 @@
     path:
     - http/vulnerabilities/jupyter-notebook-rce.yaml
     - http/default-logins/jupyterhub/jupyterhub-default-login.yaml
+    - http/misconfiguration/jupyter-ipython-unauth.yaml
+    - http/misconfiguration/jupyter-lab-unauth.yaml
+    - http/misconfiguration/jupyter-notebooks-exposed.yaml
 - name: kafka
   category: component
   description: Kafka
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - kafka
   poc:
@@ -1131,10 +1196,11 @@
     - http/cves/2023/CVE-2023-52251.yaml
     - http/default-logins/apache/kafka-center-default-login.yaml
     - http/technologies/apache/kafka-manager-panel.yaml
+    - http/misconfiguration/apache/kafka-manager-unauth.yaml
 - name: kibana
   category: component
   description: Kibana
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - kibana
   poc:
@@ -1142,6 +1208,7 @@
     path:
     - http/cves/2018/CVE-2018-17246.yaml
     - http/cves/2019/CVE-2019-7609.yaml
+    - http/misconfiguration/exposed-kibana.yaml
 - name: kingdee
   category: component
   description: Kingdee
@@ -1182,7 +1249,7 @@
 - name: kubernetes
   category: cloud
   description: Kubernetes
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - kubernetes
   poc:
@@ -1190,6 +1257,9 @@
     path:
     - http/technologies/kubernetes/kube-api/kube-api-nodes.yaml
     - http/cves/2018/CVE-2018-18264.yaml
+    - http/misconfiguration/kubernetes/kubernetes-metrics.yaml
+    - http/misconfiguration/kubernetes/kubernetes-pods-api.yaml
+    - http/misconfiguration/kubernetes/unauth-etcd-server.yaml
 - name: landray
   category: oa
   description: Landray OA
@@ -1213,7 +1283,7 @@
 - name: laravel
   category: cms
   description: Laravel
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - laravel
   poc:
@@ -1221,6 +1291,9 @@
     path:
     - http/cves/2021/CVE-2021-3129.yaml
     - http/cves/2022/CVE-2022-40734.yaml
+    - http/misconfiguration/laravel-debug-enabled.yaml
+    - http/misconfiguration/laravel-debug-infoleak.yaml
+    - http/misconfiguration/laravel-horizon-unauth.yaml
 - name: maccms
   category: cms
   description: Maccms
@@ -1556,7 +1629,7 @@
 - name: phpmyadmin
   category: component
   description: phpMyAdmin
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - phpmyadmin
   poc:
@@ -1566,6 +1639,8 @@
     - http/cves/2019/CVE-2019-6799.yaml
     - http/default-logins/phpmyadmin/phpmyadmin-default-login.yaml
     - http/vulnerabilities/phpmyadmin-unauth.yaml
+    - http/misconfiguration/phpmyadmin/phpmyadmin-server-import.yaml
+    - http/misconfiguration/phpmyadmin/phpmyadmin-misconfiguration.yaml
 - name: phpok
   category: cms
   description: Phpok
@@ -1610,13 +1685,15 @@
 - name: prometheus
   category: component
   description: Prometheus
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - prometheus
   poc:
   - source: nuclei-template
     path:
     - http/cves/2021/CVE-2021-29622.yaml
+    - http/misconfiguration/prometheus/prometheus-unauth.yaml
+    - http/misconfiguration/prometheus/prometheus-config.yaml
 - name: pulse-secure
   category: device
   description: Pulse Secure
@@ -1869,7 +1946,7 @@
 - name: seeyon
   category: oa
   description: Seeyon,致远OA
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - seeyon
   - 致远oa
@@ -1892,6 +1969,7 @@
     - http/vulnerabilities/seeyon/seeyon-oa-sp2-file-upload.yaml
     - http/vulnerabilities/seeyon/wooyun-2015-148227.yaml
     - http/vulnerabilities/other/seeyon-oa-log4j.yaml
+    - http/misconfiguration/seeyon-unauth.yaml
   - source: some_nuclei_templates
     path:
     - seeyon-M1Server-rce-userTokenService.yaml
@@ -1997,7 +2075,7 @@
 - name: spring
   category: component
   description: Spring boot,spring cloud,spring framework
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - spring
   poc:
@@ -2017,6 +2095,16 @@
     - http/vulnerabilities/springboot/springboot-actuators-jolokia-xxe.yaml
     - http/vulnerabilities/springboot/springboot-h2-db-rce.yaml
     - http/vulnerabilities/springboot/springboot-log4j-rce.yaml
+    - http/misconfiguration/jolokia/jolokia-info-disclosure.yaml
+    - http/misconfiguration/jolokia/jolokia-mbean-search.yaml
+    - http/misconfiguration/springboot/springboot-env.yaml
+    - http/misconfiguration/springboot/spring-eureka.yaml
+    - http/misconfiguration/springboot/springboot-dump.yaml
+    - http/misconfiguration/springboot/springboot-gateway.yaml
+    - http/misconfiguration/springboot/springboot-heapdump.yaml
+    - http/misconfiguration/springboot/springboot-jolokia.yaml
+    - http/misconfiguration/springboot/springboot-info.yaml
+    - http/exposures/apis/swagger-api.yaml
 - name: supervisord
   category: component
   description: Supervisord
@@ -2027,6 +2115,16 @@
   - source: nuclei-template
     path:
     - http/cves/2017/CVE-2017-11610.yaml
+- name: swagger-ui
+  category: component
+  description: Swagger UI
+  updated: "2025-05-12"
+  fingerprint:
+  - swagger
+  poc:
+  - source: nuclei-template
+    path:
+    - http/exposures/apis/swagger-api.yaml
 - name: tamronos
   category: device
   description: Tamron
@@ -2252,7 +2350,7 @@
 - name: weaver
   category: oa
   description: E-Office
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - e-office
   - ecology
@@ -2294,6 +2392,7 @@
     - http/vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml
     - http/vulnerabilities/weaver/ecology/ecology-v8-sqli.yaml
     - http/vulnerabilities/weaver/ecology/ecology-syncuserinfo-sqli.yaml
+    - http/misconfiguration/ecology-info-leak.yaml
   - source: some_nuclei_templates
     path:
     - weaver-E-Office-upload-upload.yaml
@@ -2466,7 +2565,7 @@
 - name: zabbix
   category: component
   description: Zabbix
-  updated: "2025-05-06"
+  updated: "2025-05-12"
   fingerprint:
   - zabbix
   poc:
@@ -2477,6 +2576,7 @@
     - http/cves/2022/CVE-2022-23131.yaml
     - http/cves/2022/CVE-2022-23134.yaml
     - http/default-logins/zabbix/zabbix-default-login.yaml
+    - http/misconfiguration/zabbix-dashboards-access.yaml
 - name: zcms
   category: cms
   description: ZCMS
