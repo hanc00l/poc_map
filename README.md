@@ -13,12 +13,12 @@ poc_map是一款用于nemoV3里，根据web指纹自动匹配poc的工具。在N
 - [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates)
 - [chainreactors-templates-neutron](https://github.com/chainreactors/templates/tree/master/neutron)
 - [fscan](https://github.com/shadow1ng/fscan/tree/dev/WebScan/pocs)
-- [prismx](https://github.com/yqcs/prismx/tree/main/core/plugins/exploits)
 
-2、根据梳理出的实战中最常见的poc，从指纹库中提取指纹名称，用以匹配poc。指纹库目前使用两个来源：
+2、根据梳理出的实战中最常见的poc，从指纹库中提取指纹名称，用以匹配poc。指纹库目前使用两个公开来源、一个私有来源：
 
 - [chainreactors-templates-fingers](https://github.com/chainreactors/templates/tree/master/fingers/http)
 - [fingerprinthub](https://github.com/0x727/FingerprintHub)
+- private_nuclei_templates(私有库)
 
 3、生成poc_map.json文件，记录poc的分类、匹配指纹、匹配poc文件路径等信息。
 
@@ -50,7 +50,7 @@ poc_map是一款用于nemoV3里，根据web指纹自动匹配poc的工具。在N
 
 - 1：[nuclei-templates](https://github.com/projectdiscovery/nuclei-templates)，nuclei官方模板库；
 - 2：[some_nuclei_templates](https://github.com/hanc00l/some_nuclei_templates)，hanc00l维护的模板库（目前还比较少，后续陆续补充）；
-- 3：private_nuclei_templates，私有poc库，不公开。
+- 3：private_nuclei_templates，私有poc库。
 
 ### 4、yaml文件示例
 

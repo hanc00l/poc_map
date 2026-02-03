@@ -261,7 +261,7 @@
     "Name": "apache-druid",
     "Category": "component",
     "Description": "Apache Druid",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "druid"
     ],
@@ -273,7 +273,7 @@
           "http/cves/2021/CVE-2021-36749.yaml",
           "http/cves/2023/CVE-2023-25194.yaml",
           "http/default-logins/druid/druid-default-login.yaml",
-          "http/vulnerabilities/other/apache-druid-log4j.yaml"
+          "http/vulnerabilities/apache/apache-druid-log4j-rce.yaml"
         ]
       }
     ]
@@ -488,7 +488,7 @@
     "Name": "apache-tomcat",
     "Category": "component",
     "Description": "Apache Tomcat",
-    "Updated": "2025-06-03",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "tomcat"
     ],
@@ -496,7 +496,6 @@
       {
         "Source": "nuclei-template",
         "Path": [
-          "http/cves/2017/CVE-2017-12615.yaml",
           "http/cves/2018/CVE-2018-11759.yaml",
           "http/default-logins/apache/tomcat-default-login.yaml",
           "http/cves/2025/CVE-2025-24813.yaml"
@@ -546,7 +545,7 @@
     "Name": "chanjet",
     "Category": "component",
     "Description": "chanjet,畅捷通",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "chanjet"
     ],
@@ -561,7 +560,6 @@
       {
         "Source": "nuclei-template",
         "Path": [
-          "http/vulnerabilities/chanjet-tplus/chanjet-tplus-rce.yaml",
           "http/vulnerabilities/chanjet-tplus/chanjet-tplus-unauth-passreset.yaml",
           "http/vulnerabilities/yonyou/chanjet-gnremote-sqli.yaml",
           "http/vulnerabilities/yonyou/chanjet-tplus-checkmutex-sqli.yaml",
@@ -1218,7 +1216,7 @@
     "Name": "geoserver",
     "Category": "component",
     "Description": "geoserver,地理信息服务器",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "geoserver"
     ],
@@ -1226,7 +1224,7 @@
       {
         "Source": "some_nuclei_templates",
         "Path": [
-          "geoserver-rce-cve-2024-36401.yaml"
+          "geoserver-rce-cve-2024-30641.yaml"
         ]
       },
       {
@@ -1424,7 +1422,7 @@
     "Name": "harbor",
     "Category": "cloud",
     "Description": "Harbor",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "harbor"
     ],
@@ -1432,8 +1430,7 @@
       {
         "Source": "nuclei-template",
         "Path": [
-          "http/cves/2019/CVE-2019-16097.yaml",
-          "http/cves/2022/CVE-2022-46463.yaml"
+          "http/cves/2019/CVE-2019-16097.yaml"
         ]
       }
     ]
@@ -2435,7 +2432,7 @@
     "Name": "nuuo",
     "Category": "device",
     "Description": "NUUO NVRsolo",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "nuuo"
     ],
@@ -2443,8 +2440,8 @@
       {
         "Source": "nuclei-template",
         "Path": [
-          "http/vulnerabilities/other/nuuo-file-inclusion.yaml",
-          "http/vulnerabilities/other/nuuo-nvrmini2-rce.yaml"
+          "http/default-logins/nuuo-nvr-default-login.yaml",
+          "http/vulnerabilities/other/nuuo-file-inclusion.yaml"
         ]
       }
     ]
@@ -2506,7 +2503,7 @@
     "Name": "panabit",
     "Category": "device",
     "Description": "Panabit",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "panabit"
     ],
@@ -2515,8 +2512,7 @@
         "Source": "nuclei-template",
         "Path": [
           "http/default-logins/others/panabit-ixcache-default-login.yaml",
-          "http/default-logins/panabit/panabit-default-login.yaml",
-          "http/vulnerabilities/other/panabit-ixcache-rce.yaml"
+          "http/default-logins/panabit/panabit-default-login.yaml"
         ]
       }
     ]
@@ -2610,23 +2606,6 @@
         "Source": "nuclei-template",
         "Path": [
           "http/vulnerabilities/other/phpok-sqli.yaml"
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "phpunit",
-    "Category": "component",
-    "Description": "PHPUnit",
-    "Updated": "2025-05-06",
-    "Fingerprint": [
-      "phpunit"
-    ],
-    "Poc": [
-      {
-        "Source": "nuclei-template",
-        "Path": [
-          "http/cves/2017/CVE-2017-9841.yaml"
         ]
       }
     ]
@@ -3084,7 +3063,7 @@
     "Name": "seeyon",
     "Category": "oa",
     "Description": "Seeyon,致远OA",
-    "Updated": "2025-05-12",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "seeyon",
       "致远oa"
@@ -3102,13 +3081,14 @@
           "http/default-logins/seeyon/seeyon-a8-default-login.yaml",
           "http/vulnerabilities/seeyon/zhiyuan-oa-session-leak.yaml",
           "http/vulnerabilities/seeyon/zhiyuan-oa-info-leak.yaml",
-          "http/vulnerabilities/seeyon/seeyon-oa-setextno-sqli.yaml",
           "http/vulnerabilities/seeyon/seeyon-config-exposure.yaml",
           "http/vulnerabilities/seeyon/seeyon-createmysql-exposure.yaml",
           "http/vulnerabilities/seeyon/seeyon-initdata-exposure.yaml",
           "http/vulnerabilities/seeyon/seeyon-oa-sp2-file-upload.yaml",
+          "http/vulnerabilities/seeyon/seeyon-oa-setextno-sqli.yaml",
+          "http/vulnerabilities/seeyon/seeyon-oa-fastjson-rce.yaml",
           "http/vulnerabilities/seeyon/wooyun-2015-148227.yaml",
-          "http/vulnerabilities/other/seeyon-oa-log4j.yaml",
+          "http/vulnerabilities/other/seeyon-oa-log4j-rce.yaml",
           "http/misconfiguration/seeyon-unauth.yaml"
         ]
       },
@@ -3250,7 +3230,7 @@
     "Name": "spark",
     "Category": "component",
     "Description": "Apache Spark",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "spark"
     ],
@@ -3259,7 +3239,10 @@
         "Source": "nuclei-template",
         "Path": [
           "http/vulnerabilities/other/unauth-spark-api.yaml",
-          "http/vulnerabilities/other/spark-webui-unauth.yaml",
+          "http/misconfiguration/apache-spark-env.yaml",
+          "http/misconfiguration/apachespark-ui-exposed.yaml",
+          "http/misconfiguration/installer/netsparker-enterprise-installer.yaml",
+          "http/misconfiguration/spark-webui-unauth.yaml",
           "http/cves/2022/CVE-2022-33891.yaml"
         ]
       }
@@ -3449,7 +3432,7 @@
     "Name": "thinkcmf",
     "Category": "cms",
     "Description": "ThinkCMF",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "thinkcmf"
     ],
@@ -3458,8 +3441,7 @@
         "Source": "nuclei-template",
         "Path": [
           "http/vulnerabilities/thinkcmf/thinkcmf-lfi.yaml",
-          "http/vulnerabilities/thinkcmf/thinkcmf-rce.yaml",
-          "http/vulnerabilities/thinkcmf/thinkcmf-arbitrary-code-execution.yaml"
+          "http/vulnerabilities/thinkcmf/thinkcmf-rce.yaml"
         ]
       }
     ]
@@ -3635,7 +3617,7 @@
     "Name": "venustech",
     "Category": "device",
     "Description": "venustech,启明星辰",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "venustech",
       "启明星辰"
@@ -3663,14 +3645,24 @@
         "Source": "nuclei-template",
         "Path": [
           "http/cves/2022/CVE-2022-22954.yaml",
-          "http/vulnerabilities/vmware/vmware-vcenter-lfi.yaml",
-          "http/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml",
           "http/cves/2021/CVE-2021-21985.yaml",
           "http/cves/2021/CVE-2021-21972.yaml",
           "http/cves/2021/CVE-2021-21975.yaml",
           "http/technologies/vmware/vmware-detect.yaml",
           "http/technologies/vmware/vmware-horizon-version.yaml",
-          "http/vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml"
+          "http/technologies/vmware/vmware-site-recovery-manager.yaml",
+          "http/technologies/vmware/vmware-vrealize-detect.yaml",
+          "http/vulnerabilities/other/vmware-siterecovery-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-cloud-xss.yaml",
+          "http/vulnerabilities/vmware/vmware-hcx-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-horizon-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-nsx-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-nsx-stream-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-operation-manager-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml",
+          "http/vulnerabilities/vmware/vmware-vcenter-lfi.yaml",
+          "http/vulnerabilities/vmware/vmware-vcenter-log4j-rce.yaml",
+          "http/vulnerabilities/vmware/vmware-vcenter-ssrf.yaml"
         ]
       }
     ]
@@ -3709,7 +3701,7 @@
     "Name": "weaver",
     "Category": "oa",
     "Description": "E-Office",
-    "Updated": "2025-05-12",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "e-office",
       "ecology",
@@ -3751,7 +3743,6 @@
           "http/vulnerabilities/weaver/ecology/ecology-filedownload-directory-traversal.yaml",
           "http/vulnerabilities/weaver/ecology/ecology-mysql-config.yaml",
           "http/vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml",
-          "http/vulnerabilities/weaver/ecology/ecology-v8-sqli.yaml",
           "http/vulnerabilities/weaver/ecology/ecology-syncuserinfo-sqli.yaml",
           "http/misconfiguration/ecology-info-leak.yaml"
         ]
@@ -3833,7 +3824,7 @@
     "Name": "weiphp",
     "Category": "cms",
     "Description": "WeiPHP",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "weiphp"
     ],
@@ -3841,7 +3832,6 @@
       {
         "Source": "nuclei-template",
         "Path": [
-          "http/cnvd/2020/CNVD-2020-68596.yaml",
           "http/cves/2020/CVE-2020-20300.yaml"
         ]
       }
@@ -3869,7 +3859,7 @@
     "Name": "wordpress",
     "Category": "cms",
     "Description": "WordPress",
-    "Updated": "2025-05-06",
+    "Updated": "2026-02-02",
     "Fingerprint": [
       "wordpress"
     ],
@@ -3882,29 +3872,11 @@
           "http/vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml",
           "http/vulnerabilities/wordpress/wp-user-enum.yaml",
           "http/vulnerabilities/wordpress/wp-gallery-file-upload.yaml",
-          "http/vulnerabilities/wordpress/wordpress-rce-simplefilelist.yaml",
           "http/cves/2025/CVE-2025-30567.yaml",
           "http/cves/2024/CVE-2024-27954.yaml",
           "http/cves/2024/CVE-2024-9047.yaml",
           "http/cves/2024/CVE-2024-27956.yaml",
           "http/cves/2024/CVE-2024-25600.yaml"
-        ]
-      }
-    ]
-  },
-  {
-    "Name": "wuzhicms",
-    "Category": "cms",
-    "Description": "WUZHI CMS",
-    "Updated": "2025-05-06",
-    "Fingerprint": [
-      "wuzhicms"
-    ],
-    "Poc": [
-      {
-        "Source": "nuclei-template",
-        "Path": [
-          "http/vulnerabilities/other/wuzhicms-sqli.yaml"
         ]
       }
     ]

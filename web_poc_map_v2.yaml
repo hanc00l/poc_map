@@ -165,7 +165,7 @@
 - name: apache-druid
   category: component
   description: Apache Druid
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - druid
   poc:
@@ -175,7 +175,7 @@
     - http/cves/2021/CVE-2021-36749.yaml
     - http/cves/2023/CVE-2023-25194.yaml
     - http/default-logins/druid/druid-default-login.yaml
-    - http/vulnerabilities/other/apache-druid-log4j.yaml
+    - http/vulnerabilities/apache/apache-druid-log4j-rce.yaml
 - name: apache-dubbo
   category: component
   description: Apache Dubbo
@@ -315,13 +315,12 @@
 - name: apache-tomcat
   category: component
   description: Apache Tomcat
-  updated: "2025-06-03"
+  updated: "2026-02-02"
   fingerprint:
   - tomcat
   poc:
   - source: nuclei-template
     path:
-    - http/cves/2017/CVE-2017-12615.yaml
     - http/cves/2018/CVE-2018-11759.yaml
     - http/default-logins/apache/tomcat-default-login.yaml
     - http/cves/2025/CVE-2025-24813.yaml
@@ -352,7 +351,7 @@
 - name: chanjet
   category: component
   description: chanjet,畅捷通
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - chanjet
   poc:
@@ -362,7 +361,6 @@
     - chanjet-Tplus-upload-Upload.yaml
   - source: nuclei-template
     path:
-    - http/vulnerabilities/chanjet-tplus/chanjet-tplus-rce.yaml
     - http/vulnerabilities/chanjet-tplus/chanjet-tplus-unauth-passreset.yaml
     - http/vulnerabilities/yonyou/chanjet-gnremote-sqli.yaml
     - http/vulnerabilities/yonyou/chanjet-tplus-checkmutex-sqli.yaml
@@ -782,13 +780,13 @@
 - name: geoserver
   category: component
   description: geoserver,地理信息服务器
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - geoserver
   poc:
   - source: some_nuclei_templates
     path:
-    - geoserver-rce-cve-2024-36401.yaml
+    - geoserver-rce-cve-2024-30641.yaml
   - source: nuclei-template
     path:
     - http/cves/2022/CVE-2022-24816.yaml
@@ -909,14 +907,13 @@
 - name: harbor
   category: cloud
   description: Harbor
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - harbor
   poc:
   - source: nuclei-template
     path:
     - http/cves/2019/CVE-2019-16097.yaml
-    - http/cves/2022/CVE-2022-46463.yaml
 - name: hikvision
   category: device
   description: Hikvision
@@ -1552,14 +1549,14 @@
 - name: nuuo
   category: device
   description: NUUO NVRsolo
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - nuuo
   poc:
   - source: nuclei-template
     path:
+    - http/default-logins/nuuo-nvr-default-login.yaml
     - http/vulnerabilities/other/nuuo-file-inclusion.yaml
-    - http/vulnerabilities/other/nuuo-nvrmini2-rce.yaml
 - name: odoo
   category: cms
   description: Odoo
@@ -1595,7 +1592,7 @@
 - name: panabit
   category: device
   description: Panabit
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - panabit
   poc:
@@ -1603,7 +1600,6 @@
     path:
     - http/default-logins/others/panabit-ixcache-default-login.yaml
     - http/default-logins/panabit/panabit-default-login.yaml
-    - http/vulnerabilities/other/panabit-ixcache-rce.yaml
 - name: pandora-fms
   category: component
   description: Pandora FMS
@@ -1662,16 +1658,6 @@
   - source: nuclei-template
     path:
     - http/vulnerabilities/other/phpok-sqli.yaml
-- name: phpunit
-  category: component
-  description: PHPUnit
-  updated: "2025-05-06"
-  fingerprint:
-  - phpunit
-  poc:
-  - source: nuclei-template
-    path:
-    - http/cves/2017/CVE-2017-9841.yaml
 - name: powercreator-cms
   category: cms
   description: PowerCreator CMS
@@ -1957,7 +1943,7 @@
 - name: seeyon
   category: oa
   description: Seeyon,致远OA
-  updated: "2025-05-12"
+  updated: "2026-02-02"
   fingerprint:
   - seeyon
   - 致远oa
@@ -1973,13 +1959,14 @@
     - http/default-logins/seeyon/seeyon-a8-default-login.yaml
     - http/vulnerabilities/seeyon/zhiyuan-oa-session-leak.yaml
     - http/vulnerabilities/seeyon/zhiyuan-oa-info-leak.yaml
-    - http/vulnerabilities/seeyon/seeyon-oa-setextno-sqli.yaml
     - http/vulnerabilities/seeyon/seeyon-config-exposure.yaml
     - http/vulnerabilities/seeyon/seeyon-createmysql-exposure.yaml
     - http/vulnerabilities/seeyon/seeyon-initdata-exposure.yaml
     - http/vulnerabilities/seeyon/seeyon-oa-sp2-file-upload.yaml
+    - http/vulnerabilities/seeyon/seeyon-oa-setextno-sqli.yaml
+    - http/vulnerabilities/seeyon/seeyon-oa-fastjson-rce.yaml
     - http/vulnerabilities/seeyon/wooyun-2015-148227.yaml
-    - http/vulnerabilities/other/seeyon-oa-log4j.yaml
+    - http/vulnerabilities/other/seeyon-oa-log4j-rce.yaml
     - http/misconfiguration/seeyon-unauth.yaml
   - source: some_nuclei_templates
     path:
@@ -2064,14 +2051,17 @@
 - name: spark
   category: component
   description: Apache Spark
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - spark
   poc:
   - source: nuclei-template
     path:
     - http/vulnerabilities/other/unauth-spark-api.yaml
-    - http/vulnerabilities/other/spark-webui-unauth.yaml
+    - http/misconfiguration/apache-spark-env.yaml
+    - http/misconfiguration/apachespark-ui-exposed.yaml
+    - http/misconfiguration/installer/netsparker-enterprise-installer.yaml
+    - http/misconfiguration/spark-webui-unauth.yaml
     - http/cves/2022/CVE-2022-33891.yaml
 - name: sponip
   category: device
@@ -2193,7 +2183,7 @@
 - name: thinkcmf
   category: cms
   description: ThinkCMF
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - thinkcmf
   poc:
@@ -2201,7 +2191,6 @@
     path:
     - http/vulnerabilities/thinkcmf/thinkcmf-lfi.yaml
     - http/vulnerabilities/thinkcmf/thinkcmf-rce.yaml
-    - http/vulnerabilities/thinkcmf/thinkcmf-arbitrary-code-execution.yaml
 - name: thinkphp
   category: component
   description: ThinkPHP
@@ -2310,7 +2299,7 @@
 - name: venustech
   category: device
   description: venustech,启明星辰
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - venustech
   - 启明星辰
@@ -2329,14 +2318,24 @@
   - source: nuclei-template
     path:
     - http/cves/2022/CVE-2022-22954.yaml
-    - http/vulnerabilities/vmware/vmware-vcenter-lfi.yaml
-    - http/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml
     - http/cves/2021/CVE-2021-21985.yaml
     - http/cves/2021/CVE-2021-21972.yaml
     - http/cves/2021/CVE-2021-21975.yaml
     - http/technologies/vmware/vmware-detect.yaml
     - http/technologies/vmware/vmware-horizon-version.yaml
-    - http/vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml
+    - http/technologies/vmware/vmware-site-recovery-manager.yaml
+    - http/technologies/vmware/vmware-vrealize-detect.yaml
+    - http/vulnerabilities/other/vmware-siterecovery-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-cloud-xss.yaml
+    - http/vulnerabilities/vmware/vmware-hcx-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-horizon-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-nsx-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-nsx-stream-rce.yaml
+    - http/vulnerabilities/vmware/vmware-operation-manager-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-lfi.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-log4j-rce.yaml
+    - http/vulnerabilities/vmware/vmware-vcenter-ssrf.yaml
 - name: wanhu-oa
   category: oa
   description: 万户oa
@@ -2360,7 +2359,7 @@
 - name: weaver
   category: oa
   description: E-Office
-  updated: "2025-05-12"
+  updated: "2026-02-02"
   fingerprint:
   - e-office
   - ecology
@@ -2400,7 +2399,6 @@
     - http/vulnerabilities/weaver/ecology/ecology-filedownload-directory-traversal.yaml
     - http/vulnerabilities/weaver/ecology/ecology-mysql-config.yaml
     - http/vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml
-    - http/vulnerabilities/weaver/ecology/ecology-v8-sqli.yaml
     - http/vulnerabilities/weaver/ecology/ecology-syncuserinfo-sqli.yaml
     - http/misconfiguration/ecology-info-leak.yaml
   - source: some_nuclei_templates
@@ -2453,13 +2451,12 @@
 - name: weiphp
   category: cms
   description: WeiPHP
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - weiphp
   poc:
   - source: nuclei-template
     path:
-    - http/cnvd/2020/CNVD-2020-68596.yaml
     - http/cves/2020/CVE-2020-20300.yaml
 - name: wifisky
   category: device
@@ -2475,7 +2472,7 @@
 - name: wordpress
   category: cms
   description: WordPress
-  updated: "2025-05-06"
+  updated: "2026-02-02"
   fingerprint:
   - wordpress
   poc:
@@ -2486,22 +2483,11 @@
     - http/vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml
     - http/vulnerabilities/wordpress/wp-user-enum.yaml
     - http/vulnerabilities/wordpress/wp-gallery-file-upload.yaml
-    - http/vulnerabilities/wordpress/wordpress-rce-simplefilelist.yaml
     - http/cves/2025/CVE-2025-30567.yaml
     - http/cves/2024/CVE-2024-27954.yaml
     - http/cves/2024/CVE-2024-9047.yaml
     - http/cves/2024/CVE-2024-27956.yaml
     - http/cves/2024/CVE-2024-25600.yaml
-- name: wuzhicms
-  category: cms
-  description: WUZHI CMS
-  updated: "2025-05-06"
-  fingerprint:
-  - wuzhicms
-  poc:
-  - source: nuclei-template
-    path:
-    - http/vulnerabilities/other/wuzhicms-sqli.yaml
 - name: xdcms
   category: cms
   description: XDCMS
